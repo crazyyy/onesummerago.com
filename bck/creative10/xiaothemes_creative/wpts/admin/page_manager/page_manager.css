@@ -1,0 +1,88 @@
+/***************************
+	PAGE MANAGER
+***************************/
+
+	#avaliable-pages {
+		margin-right: 15px;
+	}
+
+	.pages-custom {
+		padding: 20px;
+		padding-bottom: 10px;
+	}
+
+	.pages-custom .single-page {
+		padding: 15px 0;
+		background-color: #fff;
+		display: block;
+		width: 50%;
+	}
+
+	.pages-custom .single-page span {
+		display: inline-block;
+		margin: 10px;
+		margin-right: 25px;
+		color: #777777;
+	    font-size: 14px;
+	    font-weight: bold;
+	    margin-bottom: 10px;
+	    width: 130px;
+	}
+
+	.pages-custom .single-page a, #new-page {
+		background: none;
+		-moz-box-shadow:  0px 2px 0px 0px #ccc, 0px 0px 0px 5px #eee;
+		-webkit-box-shadow:  0px 2px 0px 0px #ccc, 0px 0px 0px 5px #eee;
+		box-shadow:    0px 2px 0px 0px #ccc, 0px 0px 0px 5px #eee;
+		background: #a3cd5a;
+		border: 1px solid #82a546;
+		background: #cae285;
+		background: -moz-linear-gradient(top,  #cae285 0%, #9eca56 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cae285), color-stop(100%,#9eca56));
+		background: -webkit-linear-gradient(top,  #cae285 0%,#9eca56 100%);
+		background: -o-linear-gradient(top,  #cae285 0%,#9eca56 100%);
+		background: -ms-linear-gradient(top,  #cae285 0%,#9eca56 100%);
+		background: linear-gradient(top,  #cae285 0%,#9eca56 100%);
+
+		padding: 10px 25px;
+		font-size: 16px;
+		font-family: helvetica, Helvetica, sans-serif;
+		text-transform: uppercase;
+		text-shadow: 0px 2px rgba(0, 0, 0, 0.2);
+		font-weight: 800;
+		
+		-moz-border-radius: 25px;
+		-webkit-border-radius: 25px;
+		border-radius: 25px;
+
+		color: #fff;
+		font-size: 12px;
+		text-decoration: none;
+	}
+
+	#new-page {
+		margin-left: 15px;
+	}
+
+	.pages-custom input {
+		display: inline-block;
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */	
+		box-sizing: border-box;         /* Opera/IE 8+ */
+		width: 350px;
+		border: 1px solid #c8c8c8;
+		-moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+		background-color: #fff;
+		font-family: helvetica, Helvetica, sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		color: #aaa;
+		padding: 10px 10px;
+		
+        -moz-box-shadow:  inset  0px 2px 5px 0px #ccc, 0px 0px 0px 5px #f5f5f5;
+		-webkit-box-shadow: inset 0px 2px 5px 0px #ccc, 0px 0px 0px 5px #f5f5f5;
+		box-shadow:     inset    0px 2px 5px 0px #ccc, 0px 0px 0px 5px #f5f5f5;
+		margin-right: 10px;
+	}

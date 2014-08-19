@@ -1,0 +1,1 @@
+Color Picker Icon - http://mazenl77.deviantart.com/

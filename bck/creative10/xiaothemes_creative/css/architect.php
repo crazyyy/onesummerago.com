@@ -1,0 +1,1104 @@
+<?php
+
+require_once( ABSPATH.'wp-load.php' );
+
+$col = wpts_get_option('colors');
+	
+$basecolor = '4BC9F2';
+
+if($col["custom_base"] != '')
+	$basecolor = $col["custom_base"];
+
+?>	
+
+/*  
+	-------------------------------------------------------------
+	Cascade Style Sheet - Project: Creative Single Page Portfolio
+	Description: Html / Css / jQuery template
+	Author: pezflash - http: //www.themeforest.net/user/pezflash
+	Version: 1.0
+	-------------------------------------------------------------
+*/ 
+
+/* ------------------ Global ------------------ */
+body {
+	background: #000;
+	text-align: left;
+	font: 12px 'Signika', sans-serif;
+	min-width: 960px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	outline: 0;
+}
+
+strong {
+	font-weight: 700;
+}
+
+.hidden {
+	display:none;
+}
+/* ---------------- End Global ---------------- */
+
+
+	
+	
+		
+/* ------------------ Header ------------------ */	
+#header {
+	position: absolute;
+	padding: 20px 0px 0px 30px;
+	z-index: 5;
+}
+
+#header .title {
+	font-size: 55px;
+	font-weight: 600;
+	color: #ffffff;	
+	margin: 0px 0px 0px -2px;
+	text-shadow: 0px 2px 3px #000;
+	display: block;
+}
+
+#header .subtitle {
+	font-size: 13px;
+	font-weight: 300;
+	color: #fff;	
+	margin: -6px 0px 0px 123px;
+	text-shadow: 0px 2px 2px #000;
+	display: block;
+}
+
+/* IEXPLORER SHADOW FIX - DISABLED
+.ie #header .subtitle {
+	filter: dropshadow(color=#000000, offx=0, offy=2);
+}
+*/
+/* ---------------- End Header ---------------- */
+
+
+
+
+/* ------------------- Menu ------------------- */
+#menu {
+	position: absolute;
+	margin: 115px 0px 0px 30px;
+	width: 800px;
+	z-index: 5;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul li {
+	list-style: none;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 0px 15px 0px 0px;
+	padding: 1px 5px 0px 5px;
+	float: left;
+	
+	background: url(../images/alpha.png);
+	background: rgba(0, 0, 0, 0.5) url();
+
+	text-transform: uppercase;
+}
+
+#menu ul li a {
+	color: #<?php echo $basecolor; ?>;	
+}
+	
+#menu ul li a:hover {
+	color: #fff;
+}
+
+#menu .disabled {
+	color: #fff;
+	cursor: default;
+}
+
+#marker {
+	position: absolute;
+	top: 125px;
+	left: -10px;
+	z-index: 4;
+}
+
+#marker img {
+	width: 10px;
+	height: 1px;
+}
+/* ----------------- End Menu ----------------- */
+
+
+
+
+	
+
+/* ------------------- Base ------------------- */
+#base {
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 784px;
+	height: 100%;
+	left: -784px;
+	opacity: 0;
+	z-index: 3;
+	
+	background: url(../images/alpha.png);
+	background: rgba(0, 0, 0, 0.9) url();
+}
+
+#base .close {
+	position: relative;
+	float: right;
+	top: 40px;
+	right: 40px;
+}
+
+.ie #base .close img {
+	border: 0px solid #000;
+}
+/* ----------------- End Base ----------------- */
+
+
+
+
+
+/* ------------------- Slider ---------------- */	
+#slider {
+	position: absolute;
+	padding: 0px 0px 0px 30px;
+	margin: -20px 0px 0px 0px;
+	top: 210px;
+	opacity: 0;
+	display: none;
+	z-index: 7;
+}
+/* --------------- End Slider ---------------- */
+
+
+
+
+
+
+/* ------------------ About ------------------ */	
+#about {
+	position: absolute;
+	padding: 0px 0px 0px 30px;
+	top: 210px;
+	opacity: 0;
+	display: none;
+	z-index: 8;
+}
+
+#about .quoted {
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 27px;
+	color: #fff;	
+	text-shadow: 0px 2px 2px #000;
+}
+
+#about .paragraph_title {
+	font-size: 14px;
+	font-weight: 700;
+	color: #<?php echo $basecolor; ?>;	
+	line-height: 28px;
+}
+
+#about .left {
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 16px;
+	color: #fff;	
+	float: left;
+	padding: 60px 0px 0px 0px;
+	width: 200px;
+}
+
+#about .middle {
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 16px;
+	color: #fff;	
+	padding: 87px 0px 0px 0px;
+	float: left;
+	margin: 0px 40px 0px 40px;
+	width: 200px;
+}
+
+#about .right {
+	font-size: 11px;
+	font-weight: 300;
+	line-height: 20px;
+	color: #fff;
+	float: right;
+	padding: 49px 0px 0px 0px;
+	width: 200px;
+}
+
+#about .right ul li {
+	list-style: none;
+}
+
+#about .right ul li a {
+	color: #797979;
+}
+
+#about .right ul li a:hover {
+	color: #<?php echo $basecolor; ?>;
+}
+
+#about .right img {
+	margin: 7px 0px 2px 0px;
+	display: block;
+}
+
+.ie #about .right img {
+	border: 0px solid #000;
+}
+
+.creative-block .rollover {
+	position:relative;
+	float:left;
+}
+
+.creative-block .rollover span {
+	background-image: url('../images/zoom_icon.png');
+	background-repeat: no-repeat;
+	width: 149px;
+	height: 43px;
+	left: 0px;
+	top: 0px;
+	display: none;
+	position:absolute;
+	margin: 7px 0px 2px 0px;
+}
+/* ---------------- End About ---------------- */
+
+
+
+
+
+/* ----------------- Portfolio --------------- */	
+.portfolio ul {
+	margin: 0;
+	overflow: hidden;
+	float: left;
+	padding: 0;
+}
+
+.portfolio ul li {
+	list-style: none;
+	margin: 0px 20px 0px 0px;
+	float: left;
+	position: relative;
+}
+
+
+.portfolio span {
+	background-image: url('../images/zoom_icon_2.png');
+	background-repeat: no-repeat;
+	width: 122px;
+	height: 107px;
+	left: 0px;
+	top: 0px;
+	display: none;
+	position:absolute;
+	margin: 4px 0px 0px 4px;
+}
+
+.portfolio .categories {
+	background-color: #404040;
+	width: 278px;
+	height: 107px;
+	position: relative;
+	margin: 0px 0px 25px 0px;
+	border: 4px solid #282828;
+}
+
+.portfolio .categories img {
+	width: 122px;
+	height: 107px;
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+}
+.ie .portfolio .categories img {
+	border: 0px solid #000;
+}
+
+.portfolio .categories .title {
+	font-size: 14px;
+	font-weight: 700;
+	color: #<?php echo $basecolor; ?>;
+	margin: 17px 0px 0px 140px;
+	display: block;
+	text-transform: uppercase;
+}
+
+.portfolio .categories .description {
+	font-size: 11px;
+	color: #fff;
+	margin: 0px 10px 0px 140px;
+	display: block;
+}
+
+.portfolio .categories .number {
+	font-size: 11px;
+	color: #969696;
+	margin: 15px 10px 0px 140px;
+	display: block;
+}
+/* -------------- End Portfolio -------------- */
+
+
+
+
+
+/* ----------------- Contact ----------------- */	
+
+
+.ie .contact .divider {
+	height: 195px;
+}
+
+.contact a {
+	color: #<?php echo $basecolor; ?>;
+}
+	
+.contact a:hover {
+	text-decoration: underline;
+}
+
+.contact .form {
+	float: left;
+	margin: 0px 0px 0px 0px;
+}
+
+.contact hr {
+	clear: both;
+	border-bottom: 0;
+	border-top: 2px solid #4e4e4e;
+	border-right: 0;
+	border-left: 0;
+	min-height: 0px;
+	height: 1px;
+}
+
+.contact .form  .fields {
+	font: 12px 'Signika', sans-serif;
+	color: #fff;
+	background-color: transparent;
+	border-width: 0px;
+	border-bottom: 1px solid #666666;
+	padding: 13px 0px 3px 0px;
+	margin: 0px 0px 3px 0px;
+	width: 250px;
+	resize: none;
+	overflow: auto;
+}
+
+.contact .form .button {
+	font: 13px 'Signika', sans-serif;
+	font-weight: 600;
+	color: #fff;
+    margin: 0px 0px 0px 0px;
+	padding: 1px 5px 1px 5px;
+    background: url(../images/alpha.png);
+	background: rgba(37, 37, 37, 0.8) url();
+    border: none;
+    cursor: pointer;
+}
+
+.contact .form .button a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.contact .form .button a:hover {
+	color: #<?php echo $basecolor; ?>;
+}
+
+.contact .form .loader_message {
+	font: 11px 'Signika', sans-serif;
+	font-weight: 300;
+	color: #<?php echo $basecolor; ?>;
+    margin-top: 4px;
+	position: relative;
+	float: right;
+}
+
+.contact .form .loader_icon {
+	-moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;
+	background: #000 url(../images/preload.gif) no-repeat center center;
+	background: rgba(0, 0, 0, 0.7) url(../images/preload.gif) no-repeat center center;
+	height: 32px;
+	width: 32px;
+	position: relative;
+	margin: 10px 0px 0px 0px;
+	display: none;
+}
+/* --------------- End Contact --------------- */
+
+
+
+
+
+/* ------------------ Reel ------------------- */	
+#reel {
+	position: absolute;
+	padding: 0px 0px 0px 30px;
+	top: 210px;
+	opacity: 0;
+	display: none;
+	z-index: 11;
+}
+
+#reel .title {
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #fff;	
+	text-shadow: 0px 2px 2px #000;
+}
+
+#reel .title .date {
+	color: #404040;
+}
+
+#reel .video {
+	margin: 5px 0px 0px 0px;
+}
+
+#reel .video .frame {
+	border: solid 0px #000;
+}
+
+#reel .text {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 17px;
+	color: #666666;	
+	padding: 20px 0px 0px 0px;
+	width: 500px;
+	float: left;
+}
+/* ---------------- End Reel ---------------- */
+
+
+
+
+
+
+/* ------------------ Awards ------------------ */	
+#awards {
+	position: absolute;
+	padding: 0px 0px 0px 30px;
+	top: 210px;
+	opacity: 0;
+	display: none;
+	z-index: 12;
+}
+
+#awards .title {
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #fff;	
+	text-shadow: 0px 2px 2px #000;
+}
+
+#awards .years {
+	font-size: 27px;
+	color: #404040;	
+}
+
+#awards .logos img {
+	margin: 20px 0px 0px 0px;
+}
+
+#awards .text {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 17px;
+	color: #666666;	
+	padding: 20px 0px 0px 0px;
+	width: 630px;
+	float: left;
+}
+/* ---------------- End Awards ---------------- */
+
+
+/* ------------------ Alert ------------------- */
+#alert {
+	position: absolute;
+	opacity: 0;
+	display: none;
+	bottom: 0px;
+	margin: 0px 0px 0px 402px;
+	padding: 15px 20px 15px 20px;
+	width: 200px;
+	height: 180px;
+	z-index: 1;
+	
+	background: url(../images/alpha.png);
+	background: rgba(0, 0, 0, 0.8) url();
+}
+
+#alert .title1 {
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+	text-shadow: 0px 2px 1px #000;
+}
+
+#alert .title2 {
+	font-size: 22px;
+	font-weight: 600;
+	color: #<?php echo $basecolor; ?>;
+	text-shadow: 0px 2px 1px #000;
+}
+
+#alert .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.ie #alert .close img {
+	border: 0px solid #000;
+}
+/* ---------------- End Alert ----------------- */
+
+
+
+
+
+
+/* ------------------ Thumbs ------------------ */
+#thumbs {
+	position: absolute;
+	bottom: 30px;
+	margin: 0px 0px 0px 30px;
+	padding: 10px 10px 10px 10px;
+	width: 347px;
+	height: 190px;
+	opacity: 0;
+	z-index: 2;
+	
+	background: url(../images/alpha.png);
+	background: rgba(0, 0, 0, 0.8) url();
+}
+
+#thumbs ul {
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	float: left;
+	padding: 10px;
+}
+
+#thumbs ul li {
+	list-style: none;
+	margin: 4px 6px 0px 0px;
+	float: left;
+	position: relative;
+}
+
+#thumbs ul li img {
+	-moz-box-shadow: 0 3px 3px #000; -webkit-box-shadow: 0 3px 3px #000; box-shadow: 0 3px 2px #000;
+	border: 1px solid #3b3b3b;
+}
+
+#thumbs .rollover {
+	position:relative;
+	float:left;
+}
+
+#thumbs .rollover span {
+	background-image: url('../images/thumb_marker.png');
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	display: none;
+	position:absolute;
+}
+
+#thumbs .playpause {
+	margin: 0px 3px 0px 7px;
+	cursor: pointer;
+}
+
+.ie #thumbs .playpause {
+	border: 0px solid #000;
+}
+/* ---------------- End Thumbs ---------------- */
+
+
+
+/* ------------------ Social ------------------ */
+#social {
+	position: absolute;
+	right: 10px;
+	bottom: 17px;
+	float: right;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 10px 0px 0px;
+	z-index: 6;
+}
+
+#social ul {
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	float: left;
+	padding: 10px;
+}
+
+#social ul li {
+	list-style: none;
+	margin: 0px 6px 0px 0px;
+	float: left;
+	position: relative;
+}
+
+#social ul li a img {
+	-moz-box-shadow: 0 2px 2px #000; -webkit-box-shadow: 0 2px 2px #000; box-shadow: 0 2px 2px #000;
+	border: 0px solid #FFF;
+}
+	
+#social ul li a:hover img {
+	border: 0px solid #<?php echo $basecolor; ?>;	
+}
+/* ---------------- End Social ---------------- */
+
+
+/* ---------------- CREATIVE CONTENT BOX ---------------- */
+
+
+
+.creative-content {
+	width: 710px;
+	height: 450px;
+	overflow-y: scroll;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 17px;
+	color: #ffffff;	
+}
+
+.creative-content h1, .creative-content h2, .creative-content h3, .creative-content h4,
+.creative-content h5, .creative-content h6 {
+	margin-top: 0;
+	color: #<?php echo $basecolor; ?>;	
+}
+
+.creative-content h1 {
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+
+.creative-content h2 {
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+
+.creative-content h3 {
+	font-size: 24px;
+	margin-bottom: 13px;
+}
+
+.creative-content h4 {
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+
+.creative-content h5 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.creative-content h6 {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.creative-content p {
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 17px;
+	color: #ffffff;	
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 20px;
+
+}
+
+.creative-content .small-text {
+	font-size: 12px !important;
+	color: #666666 !important;
+}
+
+.creative-content a {
+	color: #<?php echo $basecolor; ?>;	
+}
+
+.creative-content a:hover {
+	color: #fff;	
+}
+
+.creative-content em {
+	text-decoration: underline;
+}
+
+.creative-content strong {
+	font-weight: bold;
+}
+
+.creative-content blockquote, .creative-content blockquote p {
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 27px;
+	color: #fff;	
+	text-shadow: 0px 2px 2px #000;
+	margin: 0px 0px 20px;
+}
+
+.creative-content .header-title {
+	margin-bottom: 20px;
+}
+
+.creative-content .header-title .title {
+	display: block;
+	color: #FFFFFF;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 24px;
+    text-shadow: 0 2px 2px #000000;
+}
+
+.creative-content .header-title .subtitle {
+	display: block;
+	color: #404040;
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 24px;
+    text-shadow: 0 2px 2px #000000;
+}
+
+.creative-content .recent-projects ul {
+	padding-left: 0;
+}
+
+.creative-content .recent-projects ul li {
+	list-style: none;
+	margin-bottom: 10px;
+
+}
+
+.creative-content .recent-projects ul li a {
+	color: #797979;
+}
+
+.creative-content .recent-projects ul li a:hover {
+	color: #<?php echo $basecolor; ?>;
+}
+
+.creative-content .recent-projects img {
+	margin: 0px 0px 15px 0px;
+	display: block;
+}
+
+.ie .creative-content .recent-projects img {
+	border: 0px solid #000;
+}
+
+.creative-content .recent-projects .rollover {
+	position: relative;
+	top: 0;
+	left: 0;
+	float: left;
+	width: 149px;
+	height: 43px;
+}
+
+.creative-content .recent-projects .rollover span {
+	background-image: url('../images/zoom_icon.png');
+	background-repeat: no-repeat;
+	width: 149px;
+	height: 40px;
+	left: 0px;
+	top: -4px;
+	display: none;
+	position:absolute;
+	margin: 7px 0px 2px 0px;
+}
+
+.creative-content .portfolio ul {
+	margin: 0;
+	overflow: hidden;
+	float: left;
+	padding: 0;
+}
+
+.creative-content .portfolio ul li {
+	list-style: none;
+	margin: 0px 20px 0px 0px;
+	float: left;
+	position: relative;
+}
+
+
+.creative-content .portfolio span {
+	background-image: url('../images/zoom_icon_2.png');
+	background-repeat: no-repeat;
+	width: 122px;
+	height: 107px;
+	left: 0px;
+	top: 0px;
+	display: none;
+	position:absolute;
+	margin: 4px 0px 0px 4px;
+}
+
+.creative-content .portfolio .categories {
+	background-color: #404040;
+	width: 278px;
+	height: 107px;
+	position: relative;
+	margin: 0px 0px 25px 0px;
+	border: 4px solid #282828;
+}
+
+.creative-content .portfolio .categories img {
+	width: 122px;
+	height: 107px;
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+}
+.ie .creative-content .portfolio .categories img {
+	border: 0px solid #000;
+}
+
+.creative-content .portfolio .categories .title {
+	font-size: 14px;
+	font-weight: 700;
+	color: #<?php echo $basecolor; ?>;
+	margin: 17px 0px 0px 140px;
+	display: block;
+}
+
+.creative-content .portfolio .categories .description {
+	font-size: 11px;
+	color: #fff;
+	margin: 0px 10px 0px 140px;
+	display: block;
+}
+
+.creative-content .portfolio .categories .number {
+	font-size: 11px;
+	color: #969696;
+	margin: 15px 10px 0px 140px;
+	display: block;
+}
+
+.divider_empty {
+	display: block;
+	padding-bottom: 25px;
+}
+
+/*  
+	-------------------------------------------------------------
+	END CSS
+*/ 
+
+/* == WordPress WYSIWYG Editor Styles == */
+
+.entry-content img {
+	margin: 0 0 1.5em 0;
+	}
+.alignleft, img.alignleft {
+	margin-right: 1.5em;
+	display: inline;
+	float: left;
+	}
+.alignright, img.alignright {
+	margin-left: 1.5em;
+	display: inline;
+	float: right;
+	}
+.aligncenter, img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+	}
+.alignnone, img.alignnone {
+	/* not sure about this one */
+	}
+.wp-caption {
+	margin-bottom: 1.5em;
+	text-align: center;
+	padding-top: 5px;
+	}
+.wp-caption img {
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+	}
+.wp-caption p.wp-caption-text {
+	line-height: 1.5;
+	font-size: 10px;
+	margin: 0;
+	}
+.wp-smiley {
+	margin: 0 !important;
+	max-height: 1em;
+	}
+blockquote.left {
+	margin-right: 20px;
+	text-align: right;
+	margin-left: 0;
+	width: 33%;
+	float: left;
+	}
+blockquote.right {
+	margin-left: 20px;
+	text-align: left;
+	margin-right: 0;
+	width: 33%;
+	float: right;
+	}
+.gallery dl {}
+.gallery dt {}
+.gallery dd {}
+.gallery dl a {}
+.gallery dl img {}
+.gallery-caption {}
+
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}
+
+.loader {
+	display: none;
+	text-align: center;
+}
+
+.wpts-single-post {
+	display: none;
+}
+
+/*********************
+	BLOG
+*********************/
+
+.blog-title {
+	position: relative;
+}
+
+.blog-title #back-blog {
+	position: absolute;
+	right: 10px;
+	top: 3px;
+	display: none;
+}
+
+.wpts-blog-list {
+
+}
+
+.wpts-blog-list .post {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #868686;
+}
+
+.post .thumb {
+	width: 186px;
+	height: 146px;
+	float: left;
+}
+
+.post .thumb a {
+	border: 3px solid #ffffff;
+	display: block;
+}
+
+.post .thumb a img {
+	display: block;
+	border: none;
+}
+
+.post.withthumb .post-meta {
+	margin-left: 220px;
+}
+
+.post .post-meta .title {
+	font-size: 17px;
+	line-height: 21px;
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+
+.post-meta .meta {
+	margin-bottom: 10px;
+	color: #868686;
+}
+
+.post-meta .meta .date {
+	text-transform: uppercase;
+	padding-right: 20px;
+	border-right: 1px solid #868686;
+}
+
+.post-meta .meta .author {
+	padding-left: 20px;
+}
+
+.post-meta .read-more {
+	background: url("../images/readmore.png") no-repeat left center;
+	padding-left: 20px;
+	line-height: 14px;
+}
+
+.post .read-more a {
+	display: inline-block;
+	color: #868686 !important;
+	line-height: 14px;
+}
+
+.pagination {
+	margin: 0;
+}
+
+.pagination a {
+	display: inline-block;
+	padding: 10px;
+	padding-top: 0;
+}
+
+.single-post .post-meta .title {
+	font-size: 22px;
+	line-height: 26px;
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+
+.sticky, .bypostauthor  {
+	
+}

@@ -1,0 +1,82 @@
+#wpts-options-buttons {
+	background-color: #f8f8f8;
+	border: 1px solid #f2f2f2;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin: 10px 0;
+	padding: 10px;
+}
+
+#wpts-options-buttons h3 {
+	margin: 5px 10px;
+}
+
+#wpts-options-table th,
+#wpts-options-table td {
+	padding: 10px;
+}
+
+#wpts-options-table th label {
+	display: block;
+	width: auto;
+}
+
+#wpts-options-table .wpts-input-help {
+	color: #888888;
+	display: inline;
+	font-size: 11px;
+	padding: 0;
+	padding-left: 10px;
+}
+
+#wpts-options-table .select_wrapper span {
+	display: none;
+}
+
+#sample-sc-p {
+	display: none;
+}
+
+#sample-sc {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	width: 100%;
+	height: 100px;
+}
+
+/*******************************
+*	TOOLTIP
+/*******************************/
+
+	.tooltip {
+		display: none;
+	}
+	
+	
+	.tooltip-link img {
+		vertical-align: middle;
+		padding-bottom: 3px;
+	}
+	
+	.tool-text {
+		display: block;
+		padding-top: 10px;
+	}
+	
+	.select_wrapper {
+		display: inline;
+	}
+	
+	.first-col {
+		width: 150px;
+	}
+	
+	#preview-ss {
+		display: none;
+	}
+	
+
+	
