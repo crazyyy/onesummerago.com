@@ -1,0 +1,135 @@
+@import 'import/reset';
+@import 'import/variables';
+@import 'import/buttons';
+@import 'import/forms';
+@import 'import/lists';
+@import 'import/tables';
+@import 'import/mixin';
+@import 'import/wordpress';
+@import 'sprite';
+@import 'font_fontawesome';
+@import 'font_opensans';
+@import 'font_roboto';
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $f-norm;
+  line-height: $base-line-height;
+
+  color: $base-font-color;
+  background-color: $base-background-color;
+
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  line-height: $heading-line-height;
+
+  margin: 0 0 $small-spacing;
+}
+p,
+pre {
+  margin: 0 0 $small-spacing;
+}
+a {
+  transition: $base-transition;
+  text-decoration: none;
+
+  color: $action-color;
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($action-color, 15%);
+  }
+  &:active,
+  &:focus {
+    color: lighten($action-color, 15%);
+    outline: none;
+  }
+}
+hr {
+  margin: $base-spacing 0;
+
+  border-top: none;
+  border-right: none;
+  border-bottom: $base-border;
+  border-left: none;
+}
+img,
+picture {
+  max-width: 100%;
+  margin: 0;
+}
+.wrapper {
+  position: relative;
+
+  width: 100%;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+
+  @extend .clearfix;
+}
+.inner {
+  position: relative;
+
+  width: $width;
+  margin: 0 auto;
+
+  @extend .clearfix;
+}
+
+header {
+  background-color: $light-gray;
+  .logo {
+    display: block;
+
+    width: $width / 10;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+nav {
+  ul {
+    @extend .justify-child;
+    @extend .clearfix;
+    li {
+      display: inline-block;
+    }
+  }
+  .headnav {
+    width: $width / 5;
+  }
+}
+
+section {
+  padding: 0 0 $footer;
+}
+article {
+  @extend .clearfix;
+}
+.looper {
+  @extend .clearfix;
+}
+
+
+footer {
+  height: $footer;
+  margin: $footer_margin auto 0;
+
+  background-color: $light-gray;
+  .inner {
+    height: $footer;
+  }
+}
+
+@import 'import/print';

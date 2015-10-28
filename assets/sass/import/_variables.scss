@@ -1,0 +1,56 @@
+// Font Sizes
+$base-font-size: 16px;
+$em-base: $base-font-size;
+$base-font-family: 'Open Sans', sans-serif;
+$heading-font-family: $base-font-family;
+
+// font weight
+$f-xbold: 900;
+$f-bold: 800;
+$f-sbold: 600;
+$f-norm: 400;
+$f-light: 300;
+$f-thin: 200;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$width: 980px;
+$footer: 50px;
+$footer_margin: $footer - 2 * $footer;
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$orange: orange;
+$red: red;
+$blue: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $blue;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, .06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -.3);
+
+// Animations
+$trs: all .15s;
+$base-duration: 150ms;
+$base-timing: ease;
+$base-transition: background-color $base-duration * 5 $base-timing, color $base-duration * .7 $base-timing, opacity $base-duration * .3 $base-timing;
