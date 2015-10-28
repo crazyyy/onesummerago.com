@@ -1,4 +1,4 @@
-/* @import 'import/reset';
+@import 'import/reset';
 @import 'import/variables';
 @import 'import/buttons';
 @import 'import/forms';
@@ -8,19 +8,8 @@
 @import 'import/wordpress';
 @import 'sprite';
 @import 'font_fontawesome';
-@import 'font_opensans'; */
-
-
-@import 'css/css_bundle';
-@import 'css/gsearch';
-@import 'css/authorization';
-@import 'css/html';
-@import 'css/default';
-
-
-
-
-/*
+@import 'font_opensans';
+@import 'font_roboto';
 
 body {
   font-family: $base-font-family;
@@ -144,4 +133,3 @@ footer {
 }
 
 @import 'import/print';
- */
