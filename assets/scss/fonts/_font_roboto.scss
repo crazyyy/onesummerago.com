@@ -1,0 +1,73 @@
+$rb-font-path: '../fonts' !default;
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: normal;
+
+  src: url('#{$rb-font-path}/robotocondensed-light.eot');
+  src: local('Roboto Condensed Light'),
+  local('robotocondensed-light'),
+  url('#{$rb-font-path}/robotocondensed-light.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/robotocondensed-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-style: normal;
+
+  src: url('#{$rb-font-path}/robotocondensed-regular.eot');
+  src: local('Roboto Condensed Regular'),
+  local('robotocondensed-regular'),
+  url('#{$rb-font-path}/robotocondensed-regular.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/robotocondensed-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-style: normal;
+
+  src: url('#{$rb-font-path}/robotocondensed-bold.eot');
+  src: local('Roboto Condensed Regular'),
+  local('robotocondensed-bold'),
+  url('#{$rb-font-path}/robotocondensed-bold.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/robotocondensed-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-style: italic;
+
+  src: url('#{$rb-font-path}/robotocondensed-lightitalic.eot');
+  src: local('Roboto Condensed Light Italic'),
+  local('robotocondensed-lightitalic'),
+  url('#{$rb-font-path}/robotocondensed-lightitalic.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/robotocondensed-lightitalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-style: italic;
+
+  src: url('#{$rb-font-path}/robotocondensed-italic.eot');
+  src: local('Roboto Condensed Italic'),
+  local('robotocondensed-italic'),
+  url('#{$rb-font-path}/robotocondensed-italic.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/robotocondensed-italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-style: italic;
+
+  src: url('#{$rb-font-path}/robotocondensed-bolditalic.eot');
+  src: local('Roboto Condensed Bold Italic'),
+  local('robotocondensed-bolditalic'),
+  url('#{$rb-font-path}/robotocondensed-bolditalic.eot') format('embedded-opentype'),
+  url('#{$rb-font-path}/robotocondensed-bolditalic.woff') format('woff');
+}
