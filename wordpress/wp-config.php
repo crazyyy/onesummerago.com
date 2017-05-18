@@ -1,6 +1,6 @@
 <?php
-define( 'WPCACHEHOME', '/home/p284179/www/onesummerago.com/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
-define('WP_CACHE', true); //Added by WP-Cache Manager
+
+define('WP_CACHE', false); //Added by WP-Cache Manager
 define('DISABLE_WP_CRON', true);
 define('FS_METHOD', 'direct');
 
@@ -18,9 +18,6 @@ define('DB_COLLATE', '');
 
 define('CACHE_READ_WHITELIST','_transient|posts WHERE ID IN|limit_login_'); // do not read from cache is sql contains these
 define('CACHE_WRITE_WHITELIST','_transient|limit_login_'); // do not reset cache if sql contains these
-
-
-
 
 define('AUTH_KEY',         '(^+#`C+aIuT(>c{q/bk^FgSjNVH?^{Z-E]8_eRqHM,r<ofv%5tAHZpT.#`8=-PZp');
 define('SECURE_AUTH_KEY',  'QYCW-$EC/[)qR> L6K{Ft?(-A=k,Ytr`zTmS-3^F`r0gyr?ez/f~8+G 3H.z+Pw_');

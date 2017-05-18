@@ -1,0 +1,179 @@
+v2.3 – 22 November 2016
+
+- added: one click demo import
+- added: new homepage (Homepage Landing Video)
+- added: new homepage (Homepage Landing Fades)
+- added: new gallery type (Photo Gallery 3)
+- added: new option to adjust image logo height
+- improved: left-right aligned images in the content
+- updated: instagram and google plus social media icons
+- fixed: instagram widget not working issue
+- fixed: photo gallery 2 image alignment issue
+- fixed: gallery images have bad aspect ratio on mobile when load-one-by-one activated
+
+
+v2.2.3 – 28 February 2016
+
+- fixed: gallery images blurry on mobile
+
+
+v2.2.2 – 2 February 2016
+
+- improved: comments functionality
+- fixed: blog gallery spacing
+
+
+v2.2.1 – 20 January 2016
+
+- improved: nav menu style
+
+
+v2.2 – 4 January 2016
+
+- added new homepage: home landing slider
+- added new homepage: home landing image
+- added one-by-one loading option to galleries (boosts loading speed on huge galleries)
+
+
+v2.1.6 – 17 November 2015
+
+- fixed: single portfolio nav not aligned on mobile
+- fixed: photoswipe share image wrong url issue
+
+
+v2.1.5 – 29 October 2015
+
+- updated: fluidbox to prevent images grow more than 100%
+- fixed: contact page funfact column drop issue
+
+
+v2.1.4 – 14 September 2015
+
+- improved: department page
+
+
+v2.1.3 – 3 September 2015
+
+- improved: documentation
+
+
+v2.1.2 – 28 August 2015
+
+- improved: photo gallery
+
+
+v2.1.1 – 21 August 2015
+
+- improved: documentation
+
+
+v2.1 – 3 August 2015
+
+- improved: nested galleries
+- improved: full width images
+- improved: localization
+- fixed: smooth loading effect on home landing
+
+
+v2.0 – 18 June 2015
+
+- added: nested galleries
+
+
+v1.5 – 8 June 2015
+
+- improved: password protected galleries
+
+
+v1.4 – 29 May 2015
+
+- added: page title option for portfolio template
+
+
+v1.3 – 19 May 2015
+
+- added: related posts module to individual post page
+
+
+v1.2.3 – 10 May 2015
+
+- improved: portfolio departments
+
+
+v1.2.2 – 21 April 2015
+
+- improved: multiple portfolio functionality
+
+
+v1.2.1 – 6 April 2015
+
+- updated: sample data
+
+
+v1.2 – 2 April 2015
+
+- added: masonry support for regular galleries
+- improved: optimized images for Photo Gallery and Photo Gallery 2
+- improved: blog-simple sidebar layout
+- improved: password protected page style
+- improved: shortcodes
+- improved: documentation
+- fixed: image captions with left/right aligned images
+- fixed: big button icon alignment
+- fixed: theme update conflict
+
+
+v1.1 – 9 March 2015
+
+- added: homepage landing
+- added: homepage alternate 2
+- added: photo gallery alternate (with no zoom option)  
+- added: password protected galleries
+- added: multiple gallery support on same page
+- added: alef font
+- added: new option to disable lightbox on default wp galleries to provide support for other lightbox plugins
+- improved: theme options
+- improved: photo gallery facebook image sharing
+- fixed: loading animation blurry on retina screens
+
+
+v1.0.6 – 28 February 2015
+
+- updated: sample data
+
+
+v1.0.5 – 27 February 2015
+
+- improved: contact form
+
+
+v1.0.4 – 23 February 2015
+
+- improved: photowall
+- fixed: disabled zoom on linked images with external url
+
+
+v1.0.3 – 19 February 2015
+
+- improved: homepage functionality : now you can choose the images to show on photowall
+
+
+v1.0.2 – 15 February 2015
+
+- added: new option for full-size image resizing
+- added: new option for adding custom content to portfolio page
+- improved: images reordering functionality in single portfolio pages
+- improved: theme options
+- improved: photowall
+- improved: mobile nav style
+- improved: localization
+
+
+v1.0.1 – 3 February 2015
+
+- improved: shortcodes
+
+
+v1.0 – 17 January 2015
+
+- first release

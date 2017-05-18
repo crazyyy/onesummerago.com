@@ -1,9 +1,9 @@
 /* if work with html set TRUE, else - FALSE */
 var htmlOWp = true,
   // set wordpress template folder
-  wpThemeName = 'wp-framework',
+  wpThemeName = 'wp-photographer',
   // and set wordpress domain
-  wpDomain = 'wp-framework.dev';
+  wpDomain = 'onesummerago.dev';
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 8', 'ie_mob >= 10', 'ff >= 20', 'chrome >= 24', 'safari >= 5', 'opera >= 12', 'ios >= 7', 'android >= 2.3', '> 1%', 'last 4 versions', 'bb >= 10'
@@ -24,7 +24,7 @@ var paths = {
   images: {
     src: basePaths.src + 'img/',
     srcimg: basePaths.src + 'img/**/*.{png,jpg,jpeg,gif,svg}',
-    dest: basePaths.dest + 'img/'
+    dest: basePaths.dest + 'images/'
   },
   scripts: {
     src: basePaths.src + 'js/**',

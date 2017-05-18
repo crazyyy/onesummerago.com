@@ -1,0 +1,11 @@
+#Password Protect file
+#AuthName "CIA login"
+#AuthType Basic
+#AuthUserFile /home/p284179/data/.htpasswd
+#Require valid-user
+
+#Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>

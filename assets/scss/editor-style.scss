@@ -16,68 +16,70 @@
 .two-fourths,
 .two-sixths,
 .two-thirds {
-    float: left;
-    margin: 0 0 20px;
-    padding-left: 3%;
+  float: left;
+
+  margin: 0 0 20px;
+  padding-left: 3%;
 }
 
 .one-half,
 .three-sixths,
 .two-fourths {
-    width: 48%;
+  width: 48%;
 }
 
 .one-third,
 .two-sixths {
-    width: 31%;
+  width: 31%;
 }
 
 .four-sixths,
 .two-thirds {
-    width: 65%;
+  width: 65%;
 }
 
 .one-fourth {
-    width: 22.5%;
+  width: 22.5%;
 }
 
 .three-fourths {
-    width: 73.5%;
+  width: 73.5%;
 }
 
 .one-fifth {
-    width: 17.4%;
+  width: 17.4%;
 }
 
 .two-fifths {
-    width: 37.8%;
+  width: 37.8%;
 }
 
 .three-fifths {
-    width: 58.2%;
+  width: 58.2%;
 }
 
 .four-fifths {
-    width: 78.6%;
+  width: 78.6%;
 }
 
 .one-sixth {
-    width: 14%;
+  width: 14%;
 }
 
 .five-sixths {
-    width: 82%;
+  width: 82%;
 }
 
 .first {
-    clear: both;
-    padding-left: 0;
+  clear: both;
+
+  padding-left: 0;
 }
 
 /* Images
 ------------------------------------------------------------ */
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }

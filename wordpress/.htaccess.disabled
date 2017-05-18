@@ -1,0 +1,348 @@
+
+# BEGIN All In One WP Security
+#AIOWPS_BLOCK_WP_FILE_ACCESS_START
+<Files license.txt>
+order allow,deny
+deny from all
+</files>
+<Files wp-config-sample.php>
+order allow,deny
+deny from all
+</Files>
+<Files readme.html>
+order allow,deny
+deny from all
+</Files>
+#AIOWPS_BLOCK_WP_FILE_ACCESS_END
+#AIOWPS_BASIC_HTACCESS_RULES_START
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+ServerSignature Off
+LimitRequestBody 10240000
+<Files wp-config.php>
+order allow,deny
+deny from all
+</Files>
+#AIOWPS_BASIC_HTACCESS_RULES_END
+#AIOWPS_PINGBACK_HTACCESS_RULES_START
+<Files xmlrpc.php>
+order deny,allow
+deny from all
+</Files>
+#AIOWPS_PINGBACK_HTACCESS_RULES_END
+#AIOWPS_DISABLE_INDEX_VIEWS_START
+Options -Indexes
+#AIOWPS_DISABLE_INDEX_VIEWS_END
+#AIOWPS_DISABLE_TRACE_TRACK_START
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+RewriteRule .* - [F]
+#AIOWPS_DISABLE_TRACE_TRACK_END
+#AIOWPS_FORBID_PROXY_COMMENTS_START
+RewriteCond %{REQUEST_METHOD} =POST
+RewriteCond %{HTTP:VIA}%{HTTP:FORWARDED}%{HTTP:USERAGENT_VIA}%{HTTP:X_FORWARDED_FOR}%{HTTP:PROXY_CONNECTION} !^$ [OR]
+RewriteCond %{HTTP:XPROXY_CONNECTION}%{HTTP:HTTP_PC_REMOTE_ADDR}%{HTTP:HTTP_CLIENT_IP} !^$
+RewriteCond %{REQUEST_URI} !^/(wp-login.php|wp-admin/|wp-content/plugins/|wp-includes/).* [NC]
+RewriteRule .* - [F,NS,L]
+#AIOWPS_FORBID_PROXY_COMMENTS_END
+#AIOWPS_ADVANCED_CHAR_STRING_FILTER_START
+<IfModule mod_alias.c>
+RedirectMatch 403 \,
+RedirectMatch 403 \:
+RedirectMatch 403 \;
+RedirectMatch 403 \=
+RedirectMatch 403 \@
+RedirectMatch 403 \[
+RedirectMatch 403 \]
+RedirectMatch 403 \^
+RedirectMatch 403 \`
+RedirectMatch 403 \{
+RedirectMatch 403 \}
+RedirectMatch 403 \~
+RedirectMatch 403 \"
+RedirectMatch 403 \$
+RedirectMatch 403 \<
+RedirectMatch 403 \>
+RedirectMatch 403 \|
+RedirectMatch 403 \.\.
+RedirectMatch 403 \%0
+RedirectMatch 403 \%A
+RedirectMatch 403 \%B
+RedirectMatch 403 \%C
+RedirectMatch 403 \%D
+RedirectMatch 403 \%E
+RedirectMatch 403 \%F
+RedirectMatch 403 \%22
+RedirectMatch 403 \%27
+RedirectMatch 403 \%28
+RedirectMatch 403 \%29
+RedirectMatch 403 \%3C
+RedirectMatch 403 \%3E
+RedirectMatch 403 \%3F
+RedirectMatch 403 \%5B
+RedirectMatch 403 \%5C
+RedirectMatch 403 \%5D
+RedirectMatch 403 \%7B
+RedirectMatch 403 \%7C
+RedirectMatch 403 \%7D
+# COMMON PATTERNS
+Redirectmatch 403 \_vpi
+RedirectMatch 403 \.inc
+Redirectmatch 403 xAou6
+Redirectmatch 403 db\_name
+Redirectmatch 403 select\(
+Redirectmatch 403 convert\(
+Redirectmatch 403 \/query\/
+RedirectMatch 403 ImpEvData
+Redirectmatch 403 \.XMLHTTP
+Redirectmatch 403 proxydeny
+RedirectMatch 403 function\.
+Redirectmatch 403 remoteFile
+Redirectmatch 403 servername
+Redirectmatch 403 \&rptmode\=
+Redirectmatch 403 sys\_cpanel
+RedirectMatch 403 db\_connect
+RedirectMatch 403 doeditconfig
+RedirectMatch 403 check\_proxy
+Redirectmatch 403 system\_user
+Redirectmatch 403 \/\(null\)\/
+Redirectmatch 403 clientrequest
+Redirectmatch 403 option\_value
+RedirectMatch 403 ref\.outcontrol
+# SPECIFIC EXPLOITS
+RedirectMatch 403 errors\.
+RedirectMatch 403 config\.
+RedirectMatch 403 include\.
+RedirectMatch 403 display\.
+RedirectMatch 403 register\.
+Redirectmatch 403 password\.
+RedirectMatch 403 maincore\.
+RedirectMatch 403 authorize\.
+Redirectmatch 403 macromates\.
+RedirectMatch 403 head\_auth\.
+RedirectMatch 403 submit\_links\.
+RedirectMatch 403 change\_action\.
+Redirectmatch 403 com\_facileforms\/
+RedirectMatch 403 admin\_db\_utilities\.
+RedirectMatch 403 admin\.webring\.docs\.
+Redirectmatch 403 Table\/Latest\/index\.
+</IfModule>
+#AIOWPS_ADVANCED_CHAR_STRING_FILTER_END
+#AIOWPS_FIVE_G_BLACKLIST_START
+# 5G BLACKLIST/FIREWALL (2013)
+# @ http://perishablepress.com/5g-blacklist-2013/
+
+# 5G:[QUERY STRINGS]
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{QUERY_STRING} (\"|%22).*(<|>|%3) [NC,OR]
+RewriteCond %{QUERY_STRING} (javascript:).*(\;) [NC,OR]
+RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3) [NC,OR]
+RewriteCond %{QUERY_STRING} (\\|\.\./|`|='$|=%27$) [NC,OR]
+RewriteCond %{QUERY_STRING} (\;|'|\"|%22).*(union|select|insert|drop|update|md5|benchmark|or|and|if) [NC,OR]
+RewriteCond %{QUERY_STRING} (base64_encode|localhost|mosconfig) [NC,OR]
+RewriteCond %{QUERY_STRING} (boot\.ini|echo.*kae|etc/passwd) [NC,OR]
+RewriteCond %{QUERY_STRING} (GLOBALS|REQUEST)(=|\[|%) [NC]
+RewriteRule .* - [F]
+</IfModule>
+
+# 5G:[USER AGENTS]
+<IfModule mod_setenvif.c>
+# SetEnvIfNoCase User-Agent ^$ keep_out
+SetEnvIfNoCase User-Agent (binlar|casper|cmsworldmap|comodo|diavol|dotbot|feedfinder|flicky|ia_archiver|jakarta|kmccrew|nutch|planetwork|purebot|pycurl|skygrid|sucker|turnit|vikspider|zmeu) keep_out
+<limit GET POST PUT>
+Order Allow,Deny
+Allow from all
+Deny from env=keep_out
+</limit>
+</IfModule>
+
+# 5G:[REQUEST STRINGS]
+<IfModule mod_alias.c>
+RedirectMatch 403 (https?|ftp|php)\://
+RedirectMatch 403 /(https?|ima|ucp)/
+RedirectMatch 403 /(Permanent|Better)$
+RedirectMatch 403 (\=\\\'|\=\\%27|/\\\'/?|\)\.css\()$
+RedirectMatch 403 (\,|\)\+|/\,/|\{0\}|\(/\(|\.\.\.|\+\+\+|\||\\\"\\\")
+RedirectMatch 403 \.(cgi|asp|aspx|cfg|dll|exe|jsp|mdb|sql|ini)$
+RedirectMatch 403 /(contac|fpw|install|pingserver|register)\.php$
+RedirectMatch 403 (base64|crossdomain|localhost|wwwroot|e107\_)
+RedirectMatch 403 (eval\(|\_vti\_|\(null\)|echo.*kae|config\.xml)
+RedirectMatch 403 \.well\-known/host\-meta
+RedirectMatch 403 /function\.array\-rand
+RedirectMatch 403 \)\;\$\(this\)\.html\(
+RedirectMatch 403 proc/self/environ
+RedirectMatch 403 msnbot\.htm\)\.\_
+RedirectMatch 403 /ref\.outcontrol
+RedirectMatch 403 com\_cropimage
+RedirectMatch 403 indonesia\.htm
+RedirectMatch 403 \{\$itemURL\}
+RedirectMatch 403 function\(\)
+RedirectMatch 403 labels\.rdf
+RedirectMatch 403 /playing.php
+RedirectMatch 403 muieblackcat
+</IfModule>
+
+# 5G:[REQUEST METHOD]
+<ifModule mod_rewrite.c>
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+RewriteRule .* - [F]
+</IfModule>
+#AIOWPS_FIVE_G_BLACKLIST_END
+#AIOWPS_BLOCK_SPAMBOTS_START
+<IfModule mod_rewrite.c>
+RewriteCond %{REQUEST_METHOD} POST
+RewriteCond %{REQUEST_URI} ^(.*)?wp-comments-post\.php(.*)$
+RewriteCond %{HTTP_REFERER} !^http(s)?://onesummerago\.com [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^$
+RewriteRule .* http://127.0.0.1 [L]
+</IfModule>
+#AIOWPS_BLOCK_SPAMBOTS_END
+#AIOWPS_PREVENT_IMAGE_HOTLINKS_START
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_FILENAME} \.(gif|jpe?g?|png)$ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://onesummerago\.com [NC]
+RewriteRule \.(gif|jpe?g?|png)$ - [F,NC,L]
+</IfModule>
+#AIOWPS_PREVENT_IMAGE_HOTLINKS_END
+# END All In One WP Security
+
+#Supress php errors
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
+php_value docref_root 0
+php_value docref_ext 0
+#Enable PHP error logging
+php_flag  log_errors on
+php_value error_log  /home/p284179/data/PHP_errors.log
+
+
+# BEGIN WPSuperCache
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+#If you serve pages from behind a proxy you may want to change 'RewriteCond %{HTTPS} on' to something more sensible
+AddDefaultCharset UTF-8
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author_|wordpress_logged_in|wp-postpass_).*$
+RewriteCond %{HTTP:X-Wap-Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{HTTPS} on
+RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{SERVER_NAME}/$1/index-https.html.gz -f
+RewriteRule ^(.*) "/wp-content/cache/supercache/%{SERVER_NAME}/$1/index-https.html.gz" [L]
+
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author_|wordpress_logged_in|wp-postpass_).*$
+RewriteCond %{HTTP:X-Wap-Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{HTTPS} !on
+RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{SERVER_NAME}/$1/index.html.gz -f
+RewriteRule ^(.*) "/wp-content/cache/supercache/%{SERVER_NAME}/$1/index.html.gz" [L]
+
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author_|wordpress_logged_in|wp-postpass_).*$
+RewriteCond %{HTTP:X-Wap-Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTPS} on
+RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{SERVER_NAME}/$1/index-https.html -f
+RewriteRule ^(.*) "/wp-content/cache/supercache/%{SERVER_NAME}/$1/index-https.html" [L]
+
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author_|wordpress_logged_in|wp-postpass_).*$
+RewriteCond %{HTTP:X-Wap-Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTPS} !on
+RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{SERVER_NAME}/$1/index.html -f
+RewriteRule ^(.*) "/wp-content/cache/supercache/%{SERVER_NAME}/$1/index.html" [L]
+</IfModule>
+
+# END WPSuperCache
+
+#MANUAL COMPRESSION
+<IfModule mod_deflate.c>
+#Compress HTML, CSS, JavaScript, Text, XML and fonts
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+AddOutputFilterByType DEFLATE application/x-font
+AddOutputFilterByType DEFLATE application/x-font-opentype
+AddOutputFilterByType DEFLATE application/x-font-otf
+AddOutputFilterByType DEFLATE application/x-font-truetype
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE font/opentype
+AddOutputFilterByType DEFLATE font/otf
+AddOutputFilterByType DEFLATE font/ttf
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE image/x-icon
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/xml
+
+#Remove browser bugs (only needed for really old browsers)
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+Header append Vary User-Agent
+</IfModule>
+<IfModule mod_expires.c>
+#Enable expirations
+ExpiresActive On
+#Default directive
+ExpiresDefault "access plus 1 month"
+#My favicon
+ExpiresByType image/x-icon "access plus 1 year"
+#Images
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+#CSS
+ExpiresByType text/css "access 1 month"
+#Javascript
+ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+
+
+#Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+
+
+# BEGIN rlrssslReallySimpleSSL rsssl_version[2.4.1]
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTPS} !=on [NC]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+# END rlrssslReallySimpleSSL
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^slir/([^/]*)/(.*)$ /wp-content/plugins/pb-responsive-images/slir/index.php?r=$1/$2 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

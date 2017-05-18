@@ -1,0 +1,238 @@
+/* ============================================================================= */
+
+.navigation > div + div {
+  float: right;
+}
+
+.author-bio {
+  overflow: auto;
+}
+
+.related-posts-excerpt {
+  font-size: 14px;
+}
+
+/* ============================================================================= */
+
+.blog-type-masonry .blog-page-title, .blog-type-masonry-alternate .blog-page-title, .single-post .nav-single {
+  display: none;
+}
+
+div {
+  &.service i + br, &.fun-fact i + br, &.timeline div.event span.date + br {
+    display: none;
+  }
+}
+
+.testo > img + br {
+  display: none;
+}
+
+/* ============================================================================= */
+
+.page-template-template-portfolio-php .media-box p, .blog-regular .format-quote .entry-content blockquote p, .masonry.blog-masonry .format-quote .entry-content blockquote p, blockquote p, .format-image .alignnone, .full-width-image img {
+  margin: 0px;
+}
+
+div {
+  &.post-list ul li article h3.entry-title + p, &.intro p {
+    margin: 0px;
+  }
+}
+
+body.logged-in .comment-form p.form-submit {
+  margin: 0px;
+}
+
+/* ============================================================================= */
+
+.wp-caption {
+  width: auto !important;
+}
+
+/* ============================================================================= */
+
+@media screen and (min-width: 768px) {
+  .is-header-fixed {
+    .admin-bar .site-header, &.is-menu-toggled-on .admin-bar .nav-menu {
+      top: 46px;
+    }
+  }
+
+  html #wpadminbar {
+    z-index: 99999 !important;
+  }
+}
+
+@media screen and (min-width: 783px) {
+  .is-header-fixed {
+    .admin-bar .site-header, &.is-menu-toggled-on .admin-bar .nav-menu {
+      top: 32px;
+    }
+  }
+
+  .csstransforms.is-menu-toggled-on #wpadminbar {
+    top: -32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html #wpadminbar {
+    top: -46px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 782px) {
+  .csstransforms.is-menu-toggled-on #wpadminbar {
+    top: -46px;
+  }
+}
+
+/* ============================================================================= */
+
+.hentry.type-portfolio .entry-content > .media-box {
+  width: 90%;
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================================================= */
+
+.featured-image-fixed .media-wrap {
+  margin-bottom: 0px;
+}
+
+/* ============================================================================= */
+
+.entry-meta {
+  .cat-links a {
+    display: inline-block;
+    margin-bottom: 0.6em;
+  }
+
+  .edit-link a {
+    color: #dddddd;
+
+    &:hover {
+      color: #cccccc;
+    }
+  }
+}
+
+/* ============================================================================= */
+
+/* ============================================================================= */
+
+.about-author {
+  text-align: left;
+}
+
+/* ============================================================================= */
+
+.chat-text > p + p {
+  display: none;
+}
+
+/* ============================================================================= */
+
+.comment-awaiting-moderation {
+  margin-left: 84px;
+  margin-bottom: 0px;
+}
+
+/* ============================================================================= */
+
+.intro p {
+  font-size: 1em;
+}
+
+/* ============================================================================= */
+
+.password-form {
+  text-align: center;
+
+  .btn {
+    display: block;
+    margin: 2em auto;
+  }
+
+  p {
+    margin-bottom: 3em;
+  }
+}
+
+/* ============================================================================= */
+
+p.comment-subscription-form {
+  margin: 1.2em 0;
+
+  label {
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  &:last-child {
+    margin-top: 0;
+  }
+}
+
+/* ============================================================================= */
+
+/* YARPP */
+
+body {
+  .yarpp-related {
+    margin: 0px !important;
+  }
+
+  .related-posts {
+    h3 {
+      font-size: 12px !important;
+      font-weight: 400 !important;
+      padding: 0px !important;
+      margin: 1.4em 0 .5em 0 !important;
+      margin-top: 0px !important;
+    }
+
+    ol li a {
+      font-weight: normal !important;
+
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
+
+/* YARPP */
+
+/* ============================================================================= */
+
+/* Contact Form 7 */
+
+.wpcf7 {
+  form {
+    p {
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 0.6em;
+      text-transform: uppercase;
+    }
+
+    input, textarea {
+      margin-top: .6em;
+      font-weight: normal;
+      font-size: 13px !important;
+    }
+  }
+
+  input[type=submit] {
+    font-weight: bold;
+  }
+}
+
+/* Contact Form 7 */
+
+/* ============================================================================= */
