@@ -1,5 +1,5 @@
 /* if work with html set TRUE, else - FALSE */
-var htmlOWp = true,
+var htmlOWp = false,
   // set wordpress template folder
   wpThemeName = 'wp-photographer',
   // and set wordpress domain

@@ -17,51 +17,81 @@ Text Domain: read
 
 /* WordPress Core -------------------------------------------------------------- */
 
-.aligncenter, .alignnone, .alignright, .alignleft {
-    display: block; margin: 1.6em auto; clear: both;
-	}
+.aligncenter,
+.alignnone,
+.alignright,
+.alignleft {
+  display: block;
+  clear: both;
+
+  margin: 1.6em auto;
+}
 .wp-caption-text {
-	color:#333; font-size: 13px; margin-top: 10px;
-	}
+  font-size: 13px;
+
+  margin-top: 10px;
+
+  color: #333;
+}
 .wp-caption img {
-	border: 0 none; height: auto; margin: 0; padding: 0;
-	}
+  height: auto;
+  margin: 0;
+  padding: 0;
+
+  border: 0 none;
+}
 .wp-caption p.wp-caption-text {
-    font-size: 14px; margin: 0; padding: .6em .1em 0; text-align: left; letter-spacing: 0px; color: #999;
-	}
+  font-size: 14px;
+
+  margin: 0;
+  padding: .6em .1em 0;
+
+  text-align: left;
+  letter-spacing: 0;
+
+  color: #999;
+}
 .wp-caption.aligncenter,
 .wp-caption.aligncenter .wp-caption-text {
-	text-align: center;
-	}
+  text-align: center;
+}
 /* TABLETS */
 @media screen and (min-width: 768px) {
-	.alignnone {
-		margin: 3em 0; 
-		}
-	.aligncenter {
-		margin: 3em auto; 
-		}
-	.alignright {
-		float:right; margin: .4em 0 1em 2em;
-		}
-	.alignleft {
-		float: left; margin: .4em 2em 1em 0;
-		}
-	.alignright,
-	.alignleft {
-		max-width: 60%;
-		}
-	.alignright .wp-caption-text,
-	.alignleft p.wp-caption-text {
-		max-width: 230px;
-		}
+  .alignnone {
+    margin: 3em 0;
+  }
+  .aligncenter {
+    margin: 3em auto;
+  }
+  .alignright {
+    float: right;
+
+    margin: .4em 0 1em 2em;
+  }
+  .alignleft {
+    float: left;
+
+    margin: .4em 2em 1em 0;
+  }
+  .alignright,
+  .alignleft {
+    max-width: 60%;
+  }
+  .alignright .wp-caption-text,
+  .alignleft p.wp-caption-text {
+    max-width: 230px;
+  }
 }
 /* DESKTOPS MEDIUM */
-@media screen and (min-width: 1200px) { 
-	.content-area:not(.with-sidebar) .alignright, .content-area:not(.with-sidebar) .wp-caption.alignright {
-		margin-right: -140px; margin-left: 2em;
-		}
-	.content-area:not(.with-sidebar) .alignleft, .content-area:not(.with-sidebar) .wp-caption.alignleft {
-		margin-left: -140px; margin-right: 2em;
-		}	
+@media screen and (min-width: 1200px) {
+  .content-area:not(.with-sidebar) .alignright,
+  .content-area:not(.with-sidebar) .wp-caption.alignright {
+    margin-right: -140px;
+    margin-left: 2em;
+  }
+  .content-area:not(.with-sidebar) .alignleft,
+  .content-area:not(.with-sidebar) .wp-caption.alignleft {
+    margin-right: 2em;
+    margin-left: -140px;
+  }
 }
