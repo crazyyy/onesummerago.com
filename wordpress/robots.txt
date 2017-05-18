@@ -1,4 +1,7 @@
 User-Agent: *
+Sitemap: http://onesummerago.com/sitemap.xml
+
+User-Agent: *
 Crawl-Delay: 10
 User-agent: Yandex
 Crawl-delay: 10

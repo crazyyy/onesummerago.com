@@ -1,34 +1,70 @@
 <?php
-define('DB_NAME', 'DBNAME');
-define('DB_USER', 'DBUSER');
-define('DB_PASSWORD', 'DBPASS');
-
-define('DB_HOST', 'localhost');
-
+define( 'WPCACHEHOME', '/home/p284179/www/onesummerago.com/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
+define('WP_CACHE', true); //Added by WP-Cache Manager
 define('DISABLE_WP_CRON', true);
 define('FS_METHOD', 'direct');
 
-define('CACHE_READ_WHITELIST','_transient|posts WHERE ID IN|limit_login_'); // do not read from cache is sql contains these
-define('CACHE_WRITE_WHITELIST','_transient|limit_login_'); // do not reset cache if sql contains these
+define('DB_NAME', 'p284179_onesum');
+define('DB_USER', 'p284179_onesum');
+define('DB_PASSWORD', 'v4KEX9jp4E');
 
-define('DB_CHARSET', 'utf8mb4');
-define('DB_COLLATE', 'utf8mb4_unicode_ci');
+define('DB_HOST', 'p284179.mysql.ihc.ru');
 
-$table_prefix  = 'gihuc_';
+/** Кодировка базы данных для создания таблиц. */
+define('DB_CHARSET', 'utf8');
 
+/** Схема сопоставления. Не меняйте, если не уверены. */
+define('DB_COLLATE', '');
+
+/**#@+
+ * Уникальные ключи и соли для аутентификации.
+ *
+ * Смените значение каждой константы на уникальную фразу.
+ * Можно сгенерировать их с помощью {@link https://api.wordpress.org/secret-key/1.1/salt/ сервиса ключей на WordPress.org}
+ * Можно изменить их, чтобы сделать существующие файлы cookies недействительными. Пользователям потребуется снова авторизоваться.
+ *
+ * @since 2.6.0
+ */
+define('AUTH_KEY',         '(^+#`C+aIuT(>c{q/bk^FgSjNVH?^{Z-E]8_eRqHM,r<ofv%5tAHZpT.#`8=-PZp');
+define('SECURE_AUTH_KEY',  'QYCW-$EC/[)qR> L6K{Ft?(-A=k,Ytr`zTmS-3^F`r0gyr?ez/f~8+G 3H.z+Pw_');
+define('LOGGED_IN_KEY',    ':3GnmtrriLZ}uCSFaPsV,o2.--7.k5FUGXm,O+IIH2wl`%no|x<Vz+AFA?1qQ`J%');
+define('NONCE_KEY',        'g|U.Fr_!n%3!{[.RS:o=;t9I;ZJzHJ(Z5(W8G::,l=xfS+}}k*W[h<|oU({g1Lph');
+define('AUTH_SALT',        'bw7+PE[fl-bf>ooZm]M`C|B!7YFPS1,$iSU(J,9)BYKiA|_06B+19,X9D3IzT+F&');
+define('SECURE_AUTH_SALT', '!-x]pyAd+7(Zzde|auA;HiHDz<#rGGZ0L|>D$5i${VE9sv^1@~G6mHWz@&<iYo@|');
+define('LOGGED_IN_SALT',   'Y7lu-hY7lSKK3`5;MW6q~ncP@d5gb`ZY3VX-8pEVg4<6X:RBf;ZiP#7s;hhN(7~2');
+define('NONCE_SALT',       '_Fdnd#pB}!m#2w%)(~=EzL#N(U+_M6^-gkJ;+Q(UF7rYw1foG)M3.7W+^_Ptf0k}');
+
+/**#@-*/
+
+define( 'CONCATENATE_SCRIPTS', false );
+
+
+/**
+ * Префикс таблиц в базе данных WordPress.
+ *
+ * Можно установить несколько блогов в одну базу данных, если вы будете использовать
+ * разные префиксы. Пожалуйста, указывайте только цифры, буквы и знак подчеркивания.
+ */
+$table_prefix  = 'ons_';
+
+/**
+ * Язык локализации WordPress, по умолчанию английский.
+ *
+ * Измените этот параметр, чтобы настроить локализацию. Соответствующий MO-файл
+ * для выбранного языка должен быть установлен в wp-content/languages. Например,
+ * чтобы включить поддержку русского языка, скопируйте ru_RU.mo в wp-content/languages
+ * и присвойте WPLANG значение 'ru_RU'.
+ */
 define('WPLANG', 'ru_RU');
-define('DISALLOW_FILE_EDIT', true);
-define('WP_DEBUG', false);
-define('WPCF7_AUTOP', false);
 
-define('AUTH_KEY',         'B]9_9_%uF{fdsasgC)pMx/?-+_bVjX;Xrib=1y23rgghdh3a+dadAEIZ1O/z^2Gv`<GLr<7hKI');
-define('SECURE_AUTH_KEY',  'Gasgb43@t+eWU&NhkNXw1daVO,adsa>mFU*kC^;8NAi0&;2RIz}a>:uO0[yU_0Cr<IPep&GG0U');
-define('LOGGED_IN_KEY',    'PvbNzyB^Z?fl|Kad..Du#4/|Y{iV|ntR22zndahar534L!k)T%~vU[5Tv4Vf*4D<m GXp#wAK_');
-define('NONCE_KEY',        'ubFTsbbd34Pf{Bi(ZU^QC!FM=.Qr*|id+i4#/Wvr[tasda~n+RYcs<5I8U+d:C%cb]|d]!|~R=');
-define('AUTH_SALT',        '/b2p2we%Gc-NSSxg]R2|P3=+m_*das5mq]a`vc<BZFfg12zsghjhn|^scLAJzF!U@1Lpx1yJhD');
-define('SECURE_AUTH_SALT', 'DGqahU{$#{1])WF?2d1{+v4mWhES6`o@))*asdaGcCa(t,+j~0+je]{`7fHc-=k!IC[U{1bjh-');
-define('LOGGED_IN_SALT',   '@a*]7xfnT!asd$-,Cw{~{Y~j38>jv!,]v%tr6jVRrH2:A)asrty3sg&56yuYZ=j+k>u@6`M|A}');
-define('NONCE_SALT',       '6jyK<[n:Wbnl)`;q2E:eVhp:[ez<+=|-xPadysegg5435g4n?WzGdEIfHqrFjeqV#zl|(oWv<4');
+/**
+ * Для разработчиков: Режим отладки WordPress.
+ *
+ * Измените это значение на true, чтобы включить отображение уведомлений при разработке.
+ * Настоятельно рекомендуется, чтобы разработчики плагинов и тем использовали WP_DEBUG
+ * в своём рабочем окружении.
+ */
+define('WP_DEBUG', false);
 
 /* Это всё, дальше не редактируем. Успехов! */
 
@@ -38,3 +74,5 @@ if ( !defined('ABSPATH') )
 
 /** Инициализирует переменные WordPress и подключает файлы. */
 require_once(ABSPATH . 'wp-settings.php');
+//Disable File Edits
+define('DISALLOW_FILE_EDIT', true);

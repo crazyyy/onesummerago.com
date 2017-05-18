@@ -1,0 +1,1045 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Photographer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Wed Jan 20 2016 00:20:49 GMT+0200 (GTB Standart Saati)\n"
+"POT-Revision-Date: Mon Nov 21 2016 18:51:00 GMT+0200 (Türkiye Standart "
+"Saati)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../404.php:12
+msgid "PAGE NOT FOUND"
+msgstr ""
+
+#: ../404.php:21
+msgid "YOU CAN SEARCH FOR IT"
+msgstr ""
+
+#: ../404.php:24
+msgid "enter keyword"
+msgstr ""
+
+#: ../audio.php:25 ../image.php:25 ../video.php:25
+msgid "0 Comment"
+msgstr ""
+
+#: ../audio.php:25 ../blog-regular_no_sidebar.php:50 ../blog-regular_sidebar.php:
+#: 50 ../blog-simple_no_sidebar.php:38 ../blog-simple_sidebar.php:38 ../image.php:
+#: 25 ../post-no_sidebar.php:42 ../post-sidebar.php:42 ../video.php:25
+msgid "1 Comment"
+msgstr ""
+
+#: ../audio.php:25 ../blog-regular_no_sidebar.php:51 ../blog-regular_sidebar.php:
+#: 51 ../blog-simple_no_sidebar.php:39 ../blog-simple_sidebar.php:39 ../image.php:
+#: 25 ../post-no_sidebar.php:43 ../post-sidebar.php:43 ../video.php:25
+#, php-format
+msgid "% Comments"
+msgstr ""
+
+#: ../audio.php:30 ../blog-regular_no_sidebar.php:60 ../blog-regular_sidebar.php:
+#: 60 ../functions.php:460 ../functions.php:1029 ../functions.php:1180 ..
+#: /functions.php:1203 ../image.php:30 ../post-no_sidebar.php:52 ../post-sidebar.
+#: php:52 ../video.php:30
+msgid "Edit"
+msgstr ""
+
+#: ../audio.php:45 ../blog-regular_no_sidebar.php:119 ../blog-regular_sidebar.php:
+#: 119 ../image.php:46 ../page.php:38 ../portfolio_item-photo_gallery.php:23 ..
+#: /portfolio_item-photo_gallery_2.php:23 ../portfolio_item-photo_gallery_3.php:
+#: 23 ../portfolio_item-standard.php:25 ../post-no_sidebar.php:78 ../post-sidebar.
+#: php:78 ../template-full_width_page.php:41 ../template-medium_width_page.php:41 
+#: ../template-page_with_sidebar.php:41 ../video.php:46
+msgid "Pages:"
+msgstr ""
+
+#: ../blog-regular_no_sidebar.php:49 ../blog-regular_sidebar.php:49 ../blog-
+#: simple_no_sidebar.php:37 ../blog-simple_sidebar.php:37 ../post-no_sidebar.php:
+#: 41 ../post-sidebar.php:41
+msgid "0 Comments"
+msgstr ""
+
+#: ../blog-regular_no_sidebar.php:88 ../blog-regular_no_sidebar.php:96 ../blog-
+#: regular_no_sidebar.php:112 ../blog-regular_sidebar.php:88 ../blog-
+#: regular_sidebar.php:96 ../blog-regular_sidebar.php:112 ../functions.php:529
+msgid "Read More"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: ../class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: ../class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:377
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../class-tgm-plugin-activation.php:382
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../class-tgm-plugin-activation.php:387
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:393 ../class-tgm-plugin-activation.php:912 .
+#: ./class-tgm-plugin-activation.php:2618 ../class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:394 ../class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:395 ../class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: ../class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: ../class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:1019 ../class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:1206 ../class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: ../class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: ../class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: ../class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: ../class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: ../class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: ../class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2634 ../functions.php:1102 ../functions.php:
+#: 1265
+msgid "Type"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: ../class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: ../class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: ../class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2808 ../functions.php:1181 ../functions.php:
+#: 1204
+msgid "Update"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: ../class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: ../class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:3594 ../class-tgm-plugin-activation.php:3602
+msgid "Show Details"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:3594 ../class-tgm-plugin-activation.php:3602
+msgid "Hide Details"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: ../class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: ../class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: ../class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../comments.php:22
+#, php-format
+msgid "1 Comment %2$s"
+msgid_plural "%1$s Comments %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:42
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:46
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:52
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:64
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:74
+msgid "Leave A Comment"
+msgstr ""
+
+#: ../footer.php:13
+msgid "Close (Esc)"
+msgstr ""
+
+#: ../footer.php:14
+msgid "Share"
+msgstr ""
+
+#: ../footer.php:15
+msgid "Toggle fullscreen"
+msgstr ""
+
+#: ../footer.php:16
+msgid "Zoom in/out"
+msgstr ""
+
+#: ../footer.php:28
+msgid "Previous (arrow left)"
+msgstr ""
+
+#: ../footer.php:29
+msgid "Next (arrow right)"
+msgstr ""
+
+#: ../functions.php:214
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../functions.php:275 ../functions.php:1101
+msgid "Featured Image"
+msgstr ""
+
+#: ../functions.php:300
+msgid "Theme Navigation Menu"
+msgstr ""
+
+#: ../functions.php:324
+msgid "Home"
+msgstr ""
+
+#: ../functions.php:410
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions.php:410
+msgid "(Edit)"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: ../functions.php:440
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../functions.php:448
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions.php:466
+msgid "Reply"
+msgstr ""
+
+#: ../functions.php:488
+msgid ""
+"This content is password protected. To view it please enter the password "
+"below:"
+msgstr ""
+
+#: ../functions.php:488
+msgid "Password:"
+msgstr ""
+
+#: ../functions.php:488 ../functions.php:1849
+msgid "Submit"
+msgstr ""
+
+#: ../functions.php:599 ../functions.php:601
+msgid "Title Visibility"
+msgstr ""
+
+#: ../functions.php:656 ../functions.php:726
+msgid "Blog Sidebar"
+msgstr ""
+
+#: ../functions.php:664 ../functions.php:725
+msgid "Page Sidebar"
+msgstr ""
+
+#: ../functions.php:672
+msgid "Footer Social Icons"
+msgstr ""
+
+#: ../functions.php:681
+msgid "Author Social Icons"
+msgstr ""
+
+#: ../functions.php:760
+msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:818
+msgid "- Flickr"
+msgstr ""
+
+#: ../functions.php:819
+msgid "Flickr widget."
+msgstr ""
+
+#: ../functions.php:835 ../functions.php:936
+msgid "Title:"
+msgstr ""
+
+#: ../functions.php:842 ../functions.php:952
+msgid "User:"
+msgstr ""
+
+#: ../functions.php:849 ../functions.php:958
+msgid "Number of items to show:"
+msgstr ""
+
+#: ../functions.php:917
+msgid "- Social Feed"
+msgstr ""
+
+#: ../functions.php:918
+msgid "Social feed widget."
+msgstr ""
+
+#: ../functions.php:942
+msgid "Network:"
+msgstr ""
+
+#: ../functions.php:1025
+msgid "Portfolio"
+msgstr ""
+
+#: ../functions.php:1026
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../functions.php:1027 ../functions.php:1028 ../functions.php:1182 ../functions.
+#: php:1205
+msgid "Add New"
+msgstr ""
+
+#: ../functions.php:1030
+msgid "New"
+msgstr ""
+
+#: ../functions.php:1031 ../functions.php:1177 ../functions.php:1200
+msgid "All"
+msgstr ""
+
+#: ../functions.php:1032
+msgid "View"
+msgstr ""
+
+#: ../functions.php:1033 ../functions.php:1176 ../functions.php:1199 ..
+#: /searchform.php:8
+msgid "Search"
+msgstr ""
+
+#: ../functions.php:1034
+msgid "No Items found"
+msgstr ""
+
+#: ../functions.php:1035
+msgid "No Items found in Trash"
+msgstr ""
+
+#: ../functions.php:1066
+#, php-format
+msgid "<strong>Updated.</strong> <a target=\"_blank\" href=\"%s\">View</a>"
+msgstr ""
+
+#: ../functions.php:1068
+msgid "Custom field updated."
+msgstr ""
+
+#: ../functions.php:1070
+msgid "Custom field deleted."
+msgstr ""
+
+#: ../functions.php:1072
+msgid "Updated."
+msgstr ""
+
+#. translators: %s: date and time of the revision
+#: ../functions.php:1075
+#, php-format
+msgid "Restored to revision from %s"
+msgstr ""
+
+#: ../functions.php:1077
+#, php-format
+msgid "<strong>Published.</strong> <a target=\"_blank\" href=\"%s\">View</a>"
+msgstr ""
+
+#: ../functions.php:1079
+msgid "Saved."
+msgstr ""
+
+#: ../functions.php:1081
+#, php-format
+msgid "Submitted. <a target=\"_blank\" href=\"%s\">Preview</a>"
+msgstr ""
+
+#: ../functions.php:1083
+#, php-format
+msgid ""
+"Scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Preview</a>"
+msgstr ""
+
+#. translators: Publish box date format, see http://php.net/date
+#: ../functions.php:1086
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: ../functions.php:1088
+#, php-format
+msgid "<strong>Item draft updated.</strong> <a target=\"_blank\" href=\"%s\">Preview</a>"
+msgstr ""
+
+#: ../functions.php:1100
+msgid "Title"
+msgstr ""
+
+#: ../functions.php:1103 ../functions.php:1174 ../functions.php:1184
+msgid "Departments"
+msgstr ""
+
+#: ../functions.php:1104 ../functions.php:1293
+msgid "Short Description"
+msgstr ""
+
+#: ../functions.php:1105
+msgid "Author"
+msgstr ""
+
+#: ../functions.php:1107
+msgid "Date"
+msgstr ""
+
+#: ../functions.php:1175
+msgid "Department"
+msgstr ""
+
+#: ../functions.php:1178
+msgid "Parent"
+msgstr ""
+
+#: ../functions.php:1179
+msgid "Parent:"
+msgstr ""
+
+#: ../functions.php:1183
+msgid "New Name"
+msgstr ""
+
+#: ../functions.php:1197 ../functions.php:1207
+msgid "Portfolio Tags"
+msgstr ""
+
+#: ../functions.php:1198
+msgid "Portfolio Tag"
+msgstr ""
+
+#: ../functions.php:1201
+msgid "Parent Tag"
+msgstr ""
+
+#: ../functions.php:1202
+msgid "Parent Tag:"
+msgstr ""
+
+#: ../functions.php:1206
+msgid "New Tag Name"
+msgstr ""
+
+#: ../functions.php:1241
+msgid "Show All"
+msgstr ""
+
+#: ../functions.php:1273
+msgid "Standard"
+msgstr ""
+
+#: ../functions.php:1277
+msgid "Photo Gallery"
+msgstr ""
+
+#: ../functions.php:1281
+msgid "Photo Gallery 2"
+msgstr ""
+
+#: ../functions.php:1285
+msgid "Photo Gallery 3"
+msgstr ""
+
+#: ../functions.php:1307
+msgid "Details"
+msgstr ""
+
+#: ../functions.php:1821
+msgid "What is the sum?"
+msgstr ""
+
+#: ../functions.php:1845
+msgid "NAME"
+msgstr ""
+
+#: ../functions.php:1846
+msgid "EMAIL"
+msgstr ""
+
+#: ../functions.php:1847
+msgid "MESSAGE"
+msgstr ""
+
+#: ../functions.php:1990 ../functions.php:2600 ../functions.php:2733
+msgid "prev"
+msgstr ""
+
+#: ../functions.php:1990 ../functions.php:2600 ../functions.php:2733
+msgid "next"
+msgstr ""
+
+#: ../functions.php:3022
+#, php-format
+msgid ""
+"You shall not place the %1$s template tag inside the loop on "
+"list/archives/search/etc templates."
+msgstr ""
+
+#: ../functions.php:3291
+msgid "First"
+msgstr ""
+
+#: ../functions.php:3500
+msgid "Last"
+msgstr ""
+
+#: ../functions.php:3539
+msgid "Colors"
+msgstr ""
+
+#: ../functions.php:3546
+msgid "Link Color"
+msgstr ""
+
+#: ../functions.php:3554
+msgid "Link Hover Color"
+msgstr ""
+
+#: ../functions.php:3562
+msgid "Fonts"
+msgstr ""
+
+#: ../functions.php:3770
+msgid "One Click Demo Import"
+msgstr ""
+
+#: ../image.php:53
+msgid "PREVIOUS IMAGE"
+msgstr ""
+
+#: ../image.php:59
+msgid "NEXT IMAGE"
+msgstr ""
+
+#: ../part-about_author.php:2
+msgid "WRITTEN BY"
+msgstr ""
+
+#: ../part-archive_title.php:6
+msgid "Category"
+msgstr ""
+
+#: ../part-archive_title.php:14
+msgid "Posts Tagged"
+msgstr ""
+
+#: ../part-archive_title.php:22
+msgid "Posts By"
+msgstr ""
+
+#: ../part-archive_title.php:30
+msgid "Date Archives"
+msgstr ""
+
+#: ../part-archive_title.php:38
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: ../part-archive_title.php:42
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: ../part-archive_title.php:46 ../part-archive_title.php:65
+msgid "Archives"
+msgstr ""
+
+#: ../part-archive_title.php:57
+msgid "searched for :"
+msgstr ""
+
+#: ../part-pagination.php:20
+msgid "<span class=\"meta-nav\">&#8592;</span> Older posts"
+msgstr ""
+
+#: ../part-pagination.php:26
+msgid "Newer posts <span class=\"meta-nav\">&#8594;</span>"
+msgstr ""
+
+#: ../part-related_posts.php:28
+msgid "You May Also Like"
+msgstr ""
+
+#: ../part-share_links.php:2
+msgid "SHARE THIS POST"
+msgstr ""
+
+#: ../part-share_links.php:5
+msgid "I wanted you to see this post"
+msgstr ""
+
+#: ../part-share_links.php:5
+msgid "Check out this post"
+msgstr ""
+
+#: ../part-share_links.php:5
+msgid "Email this post to a friend"
+msgstr ""
+
+#: ../part-share_links.php:7
+msgid "Share this post on Google+"
+msgstr ""
+
+#: ../part-share_links.php:9
+msgid "Currently reading"
+msgstr ""
+
+#: ../part-share_links.php:9
+msgid "Share this post with your followers"
+msgstr ""
+
+#: ../part-share_links.php:11
+msgid "Share this post on Facebook"
+msgstr ""
+
+#: ../portfolio_item-photo_gallery.php:30 ../portfolio_item-photo_gallery_2.php:
+#: 30 ../portfolio_item-photo_gallery_3.php:30 ../portfolio_item-standard.php:32
+msgid "PREVIOUS"
+msgstr ""
+
+#: ../portfolio_item-photo_gallery.php:35 ../portfolio_item-photo_gallery_2.php:
+#: 35 ../portfolio_item-photo_gallery_3.php:35 ../portfolio_item-standard.php:37
+msgid "NEXT"
+msgstr ""
+
+#: ../post-no_sidebar.php:101 ../post-sidebar.php:101
+msgid "PREVIOUS POST"
+msgstr ""
+
+#: ../post-no_sidebar.php:106 ../post-sidebar.php:106
+msgid "NEXT POST"
+msgstr ""
+
+#: ../searchform.php:3
+msgid "Search for:"
+msgstr ""
+
+#: ../searchform.php:5
+msgid "Enter Keyword..."
+msgstr ""
+
+#. Name of the template
+msgid "Full-width Page"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage with Photowall"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage Alternate with Slideshow"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage Alternate with Slider"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage Landing with Photowall"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage Landing with Slideshow"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage Landing with Single Image"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage Landing with Fades"
+msgstr ""
+
+#. Name of the template
+msgid "Homepage Landing with Video"
+msgstr ""
+
+#. Name of the template
+msgid "Medium-width Page"
+msgstr ""
+
+#. Name of the template
+msgid "Page with Sidebar"
+msgstr ""
+
+#. Name of the theme
+msgid "Photographer"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://themeforest.net/user/pixelwars/portfolio"
+msgstr ""
+
+#. Description of the theme
+msgid "Responsive WordPress theme."
+msgstr ""
+
+#. Author of the theme
+msgid "Pixelwars"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://themeforest.net/user/pixelwars"
+msgstr ""

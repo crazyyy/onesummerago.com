@@ -1,0 +1,31 @@
+== Changelog ==
+
+= 1.0.0-beta.7 =
+* Added: New filter `wpenc_addon_domains` allows filtering the domains to generate the certificate for
+* Enhanced: If an account has already been registered, the plugin will now fetch the details instead of failing
+* Enhanced: Let's Encrypt API errors are now being printed out for more transparent errors
+
+= 1.0.0-beta.6 =
+* Fixed: `cURL error 3: malformed` does not happen anymore on WordPress 4.6
+
+= 1.0.0-beta.5 =
+* Fixed: use new Multisite functions for WordPress 4.6
+
+= 1.0.0-beta.4 =
+* Added: a link to the Let's Encrypt Subscriber Agreement is now displayed in the admin interface
+* Fixed: plugin now supports using the latest Let's Encrypt Subscriber Agreement from August 1st, 2016
+
+= 1.0.0-beta.3 =
+* Added: plugin main class instance can now easily be accessed via a `wpenc()` function
+* Enhanced: the admin class instance is now publicly accessible through a `WPENC\App::admin()` method
+* Enhanced: the admin screen and form POST urls are now managed by single dedicated methods respectively and can be filtered
+* Fixed: use `wp_remote_get()` for challenge self check to be more error-prone
+
+= 1.0.0-beta.2 =
+* Added: a reset functionality has been introduced including UI (hidden by default)
+* Enhanced: error messages provide more detail about what exactly went wrong
+* Tweaked: updated the plugin initialization library to be compatible with WordPress 4.6
+* Fixed: fixed an error where the filesystem credentials form was posting to the wrong location
+
+= 1.0.0-beta.1 =
+* First official beta

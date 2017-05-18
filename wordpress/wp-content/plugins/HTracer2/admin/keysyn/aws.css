@@ -1,0 +1,85 @@
+		body{
+			padding-right:50px;
+			padding-left:50px;
+		}
+		.mainkeys
+		{
+			margin-bottom:30px;
+			white-space:normal;
+		}
+		.mainkeys a, .mainkeys span.curent
+		{
+			padding-right:10px;
+			white-space:nowrap;
+		}
+		#savefrom
+		{
+			position:fixed;
+			bottom:0;
+			background:white;
+			margin:0;
+			padding:5px;
+			border:1px dashed gray;
+		}
+		.key_td input,.key_td span
+		{
+			cursor:pointer;
+		}
+		
+		.key_td span::selection
+		{ 
+			background: none;
+		}
+		.key_td span::-moz-selection 
+		{ 
+			background: none;
+		}
+		.ztable td{white-space:nowrap;}
+		h2,h3 {text-align:center;}
+		.wordform{float:left; margin-right: 25px;}
+		.wordformpie,.wordformtable{float:left;}
+		#wordforms{display:none;}
+		#wordforms table.tablesorter{width:auto;}
+		table.tablesorter thead tr .header {padding-right:20px;}
+		table.tablesorter, table.tablesorter td {font-size:10pt;}
+		table.tablesorter {border-spacing:1px;}
+		#selkeys1, #selkeys2 
+		{
+			white-space: pre; 
+			border: 1px dotted gray;
+			height:300px;
+			padding-left:15px;
+			width:450px;
+			overflow-x:hidden;
+			overflow-y:scroll;
+		}
+		#fselkeys1,#fselkeys2
+		{
+			white-space: normal; 
+			border: 1px dotted gray;
+			width:450px;
+			sheight:30px;
+			soverflow:hidden;
+			soverflow-x:hidden;
+			soverflow-y:hidden;
+			margin-bottom:15px;
+			padding-right:15px;
+			padding-left:15px;
+			padding-top:5px;
+			padding-bottom:5px;
+		}
+		#oselkeys1, #oselkeys2 {display: none;}
+		table.tablesorter {background-color:inherit;}
+		table.tablesorter thead tr th, table.tablesorter tfoot tr th 
+		{
+			background-color:inherit;
+			border:none;
+		}
+		table.tablesorter tbody td 
+		{
+			background-color:inherit;
+		}
+		table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp 
+		{
+			background-color:inherit;
+		}

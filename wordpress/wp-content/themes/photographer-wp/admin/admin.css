@@ -1,0 +1,265 @@
+
+
+.wrap2
+{
+	max-width: 800px;
+}
+
+
+.wrap2 a:focus,
+.wrap2 a:active
+{
+	color: #464646;
+	
+	-webkit-box-shadow: none;
+			box-shadow: none;
+}
+
+
+.wrap2 .button:focus,
+.wrap2 .button:active
+{
+	outline: none;
+}
+
+
+/* ============================================================================= */
+
+
+.wrap2 .nav-tab
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+.wrap2 .nav-tab-active:hover
+{
+	cursor: default;
+}
+
+
+/* ============================================================================= */
+
+
+.wrap2 h4
+{
+	font-size: 1.05em;
+	margin-bottom: 10px;
+}
+
+
+/* ============================================================================= */
+
+
+.wrap2 .metabox-prefs
+{
+	border-top: 1px solid #cccccc !important;
+}
+
+
+.wrap2 #contextual-help-back
+{
+	right: 0px;
+	border-right: 0px;
+}
+
+
+.wrap2 .help-tab-content
+{
+	margin-right: 0px;
+	margin-top: 12px;
+}
+
+
+/* ============================================================================= */
+
+
+.wrap2 .postbox
+{
+	margin-bottom: 0px;
+}
+
+
+/* ============================================================================= */
+
+
+.wrap2 table
+{
+	line-height: 1.4em;
+	border-spacing: 0px;
+
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
+	
+	width: 100%;
+}
+
+
+/* ============================================================================= */
+
+
+.wrap2 .option-left
+{
+	border-top: 1px solid #eeeeee;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	width: 450px;
+}
+
+
+.wrap2 .metabox-prefs .option-left
+{
+	width: 350px;
+}
+
+
+.wrap2 .option-right
+{
+	font-size: 11px;
+	color: #aaaaaa;
+	border-top: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	padding-left: 20px;
+}
+
+
+.wrap2 table tr:first-child td
+{
+	border-top: 0px;
+}
+
+
+.wrap2 table tr:last-child td
+{
+	border-bottom: 0px;
+}
+
+
+/* ============================================================================= */
+
+
+.wrap2 input[type="text"]
+{
+	width: 100%;
+}
+
+
+.wrap2 select
+{
+	width: 100%;
+	height: auto;
+}
+
+
+.wrap2 textarea
+{
+	resize: vertical;
+	width: 100%;
+}
+
+
+.wrap2 input.button-primary
+{
+	margin-top: 20px;
+}
+
+
+.wrap2 label
+{
+	display: inline-block;
+	margin-top: 20px;
+	cursor: default;
+}
+
+
+.wrap2 h4 + label
+{
+	margin-top: 0px;
+}
+
+
+/* ============================================================================= */
+
+
+.code2
+{
+	font-family: Consolas, Monaco, monospace, "Courier New";
+}
+
+
+/* ============================================================================= */
+
+
+.wrap2 .alert-success
+{
+	height: 50px;
+}
+
+
+.wrap2 .alert-success p
+{
+	color: #333333;
+	background-color: #ffffe0;
+	border: 1px solid #e6db55;
+	cursor: pointer;
+	padding: .7em;
+
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	 -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+
+.wrap2 .status
+{
+	display: none;
+	position: fixed;
+	top: 44%;
+	left: 44%;
+	z-index: 999;
+	
+	font-size: 20px;
+	color: #333333;
+	background-color: #FFEC8B;
+	border: 1px solid #FC0;
+
+	padding: 25px;
+	
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	 -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+
+.wrap2 .status-done
+{
+	background-color: #C3FF88;
+	border-color: #8DFF1C;
+}
+
+
+.wrap2 .status img
+{
+	margin-right: 10px;
+}
+
+
+/* ============================================================================= */
+
+
+.color
+{
+	margin-top: 3px !important;
+	margin-left: 10px !important;
+}
+

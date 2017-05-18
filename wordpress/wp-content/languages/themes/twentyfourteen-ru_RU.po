@@ -1,5 +1,5 @@
-# Translation of Twenty Fourteen in Russian
-# This file is distributed under the same license as the Twenty Fourteen package.
+# Translation of Themes - Twenty Fourteen in Russian
+# This file is distributed under the same license as the Themes - Twenty Fourteen package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2015-07-18 11:27:20+0000\n"
@@ -7,8 +7,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
-"Project-Id-Version: Twenty Fourteen\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Themes - Twenty Fourteen\n"
 
 #. Description of the plugin/theme
 msgid "In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier."
@@ -174,7 +175,7 @@ msgstr "Улучшите дизайн вашего сайта с помощью 
 msgid "The home page features your choice of up to 6 posts prominently displayed in a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can change the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customize</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed instead."
 msgstr "На главной странице можно отобразить до 6 записей в виде сетки или слайдера, отмеченных <a href=\"%1$s\">меткой</a>. Переименовать метку и выбрать вариант отображения можно на экране <a href=\"%2$s\">«Внешний вид» &rarr; «Настроить»</a>. Если записей с меткой не найдено, будут отображаться <a href=\"%3$s\">прилепленные записи</a>."
 
-#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.8)  #-#-#-#-#
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.9)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: inc/customizer.php:142
 msgid "Twenty Fourteen"
@@ -246,11 +247,11 @@ msgstr "Основное меню"
 msgid "Search"
 msgstr "Поиск"
 
-#: functions.php:498
+#: functions.php:523
 msgid "Page %s"
 msgstr "Страница %s"
 
-#: functions.php:379
+#: functions.php:404
 msgid "%d Article"
 msgid_plural "%d Articles"
 msgstr[0] "%d статья"
@@ -434,7 +435,7 @@ msgstr "По данному адресу ничего не найдено. По�
 msgid "Not Found"
 msgstr "Не найдено"
 
-#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.8)  #-#-#-#-#
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.9)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:21
 msgid "https://wordpress.org/"

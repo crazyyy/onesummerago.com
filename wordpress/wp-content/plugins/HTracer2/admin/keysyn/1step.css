@@ -1,0 +1,52 @@
+		body{
+			padding-right:50px;
+			padding-left:50px;
+		}
+		h3
+		{
+			padding-bottom:5px;
+			margin-bottom:0;
+			
+		}
+		#projects a
+		{
+			margin-right:15px;
+		}
+		input[type=text], textarea
+		{
+			width:300px;
+		}
+		#genkeys,#gen
+		{
+			width:500px;
+		}
+		#genkeys
+		{	
+			font-size:90%;
+		}
+		textarea
+		{
+			height:150px;
+		}
+		i, #ta_table #ta_hint
+		{
+			padding-left:15px;
+			color:gray;
+		}
+		#ta_table td
+		{
+			margin:0;
+			padding:0;
+		}
+		.example8, .example8:visited,
+		a.example8, a.example8:visited
+		{
+			text-decoration:none;
+			border-bottom: 1px dashed blue;
+		}
+		#error
+		{
+			padding:20px;
+			margin:20px;
+			color:red;
+		}

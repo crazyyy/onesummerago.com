@@ -48,7 +48,7 @@ class Whois extends WhoisClient
 	/*
 	 * Constructor function
 	 */
-	function __construct()
+	function Whois()
 		{
 		// Load DATA array
 		@require('whois.servers.php');

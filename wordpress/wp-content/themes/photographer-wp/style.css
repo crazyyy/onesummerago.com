@@ -1,0 +1,67 @@
+/*
+Theme Name:  Photographer
+Theme URI:   http://themeforest.net/user/pixelwars/portfolio
+Author:      Pixelwars
+Author URI:  http://themeforest.net/user/pixelwars
+Description: Responsive WordPress theme.
+Version:     2.3
+License:     ThemeForest License
+License URI: http://themeforest.net/licenses
+Tags:        light, dark, white
+Text Domain: read
+*/
+
+/*
+    Do not remove any of the commented text above as it is used by the theme for proper function!
+*/
+
+/* WordPress Core -------------------------------------------------------------- */
+
+.aligncenter, .alignnone, .alignright, .alignleft {
+    display: block; margin: 1.6em auto; clear: both;
+	}
+.wp-caption-text {
+	color:#333; font-size: 13px; margin-top: 10px;
+	}
+.wp-caption img {
+	border: 0 none; height: auto; margin: 0; padding: 0;
+	}
+.wp-caption p.wp-caption-text {
+    font-size: 14px; margin: 0; padding: .6em .1em 0; text-align: left; letter-spacing: 0px; color: #999;
+	}
+.wp-caption.aligncenter,
+.wp-caption.aligncenter .wp-caption-text {
+	text-align: center;
+	}
+/* TABLETS */
+@media screen and (min-width: 768px) {
+	.alignnone {
+		margin: 3em 0; 
+		}
+	.aligncenter {
+		margin: 3em auto; 
+		}
+	.alignright {
+		float:right; margin: .4em 0 1em 2em;
+		}
+	.alignleft {
+		float: left; margin: .4em 2em 1em 0;
+		}
+	.alignright,
+	.alignleft {
+		max-width: 60%;
+		}
+	.alignright .wp-caption-text,
+	.alignleft p.wp-caption-text {
+		max-width: 230px;
+		}
+}
+/* DESKTOPS MEDIUM */
+@media screen and (min-width: 1200px) { 
+	.content-area:not(.with-sidebar) .alignright, .content-area:not(.with-sidebar) .wp-caption.alignright {
+		margin-right: -140px; margin-left: 2em;
+		}
+	.content-area:not(.with-sidebar) .alignleft, .content-area:not(.with-sidebar) .wp-caption.alignleft {
+		margin-left: -140px; margin-right: 2em;
+		}	
+}
