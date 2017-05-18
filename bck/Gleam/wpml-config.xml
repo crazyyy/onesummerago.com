@@ -1,9 +1,0 @@
-<wpml-config>
-	<admin-texts>
-		<key name="gleam_date_format"/>
-		<key name="gleam_logo_text"/>
-		<key name="gleam_seo_home_titletext"/>
-		<key name="gleam_seo_home_descriptiontext"/>
-		<key name="gleam_seo_home_keywordstext"/>
-	</admin-texts>
-</wpml-config>

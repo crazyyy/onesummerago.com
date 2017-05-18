@@ -1,7 +1,0 @@
-require("wpts/wpts_admin_config.php"); require("wpts/admin/wpts_init_admin.php"); 
- 
-require("wpts/inc/_portfolio.php"); 
-
-require("wpts/wpts_shortcodes.php"); 
-
-require("wpts/layout-builder/layout-builder.php"); 

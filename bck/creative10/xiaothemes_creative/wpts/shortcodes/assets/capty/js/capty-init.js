@@ -1,1 +1,0 @@
-jQuery(function($){	$(document).ready( function() {				$('.capty-default').capty();							$('.capty-fixed').capty({		  animation: 'fixed'		});		    	});});
