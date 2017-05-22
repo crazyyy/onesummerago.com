@@ -8,7 +8,7 @@ define('DB_NAME', 'p284179_onesum');
 define('DB_USER', 'p284179_onesum');
 define('DB_PASSWORD', 'v4KEX9jp4E');
 
-define('DB_HOST', 'p284179.mysql.ihc.ru');
+define('DB_HOST', 'localhost');
 
 /** Кодировка базы данных для создания таблиц. */
 define('DB_CHARSET', 'utf8');

@@ -15,9 +15,11 @@ get_header();
 					while ( have_posts() ) : the_post();
 						?>
 							<div id="post-<?php the_ID(); ?>" <?php post_class( 'home-wrap' ); ?>>
-								<?php
-									the_content();
-								?>
+								<div class="home-background">
+                  <div class="intro">
+                    <?php the_content(); ?>
+                  </div>
+                </div>
 							</div>
 						<?php
 					endwhile;

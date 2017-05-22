@@ -1,6 +1,6 @@
 <?php
 	$pagination = get_option( 'pagination', 'No' );
-	
+
 	if ( $pagination == 'Yes' )
 	{
 		?>
@@ -17,13 +17,13 @@
 			<nav class="navigation" role="navigation">
 				<div class="nav-previous">
 					<?php
-						next_posts_link( __( '<span class="meta-nav">&#8592;</span> Older posts', 'read' ) );
+						next_posts_link( __( '<span class="meta-nav">&#8592;</span> Назад', 'read' ) );
 					?>
 				</div>
-				
+
 				<div class="nav-next">
 					<?php
-						previous_posts_link( __( 'Newer posts <span class="meta-nav">&#8594;</span>', 'read' ) );
+						previous_posts_link( __( 'Далее <span class="meta-nav">&#8594;</span>', 'read' ) );
 					?>
 				</div>
 			</nav>
