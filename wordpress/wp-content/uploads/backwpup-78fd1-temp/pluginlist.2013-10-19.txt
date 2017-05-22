@@ -1,0 +1,68 @@
+------------------------------------------------------------
+  Plugin list generated with BackWPup version: 3.0.13
+  https://marketpress.com/product/backwpup-pro/
+  Blog Name: 
+  Blog URL: http://onesummerago.com
+  Generated on: 2013-10-19 23:56.42
+------------------------------------------------------------
+
+
+Вся информация о плагинах:
+------------------------------
+(J)ExR (v.2.0.1 beta) из Zubenko Maksim  <work@jawsik.com>
+	http://blog.jawsik.com/wordpress/jexr.php
+Antispam Bee (v.2.5.9) из Sergej M�ller
+	http://antispambee.com
+BackWPup (v.3.0.13) из Inpsyde GmbH
+	https://marketpress.com/product/backwpup-pro/
+Cleverness To-Do List (v.3.3.2) из C.M. Kendrick
+	http://cleverness.org/plugins/to-do-list/
+Dagon Design Sitemap Generator (v.3.17) из Dagon Design
+	http://www.dagondesign.com/articles/sitemap-generator-plugin-for-wordpress/
+Google XML Sitemaps (v.3.3) из Arne Brachhold
+	http://www.arnebrachhold.de/redir/sitemap-home/
+LiveJournal Importer (v.0.5) из wordpressdotorg
+	http://wordpress.org/extend/plugins/livejournal-importer/
+RusToLat (v.0.3) из Anton Skorobogatov <skorobogatov@gmail.com>
+	http://mywordpress.ru/plugins/rustolat/
+Subscribe To Comments (v.2.1.2) из Mark Jaquith
+	http://txfx.net/code/wordpress/subscribe-to-comments/
+VKontakte API (v.3.7) из kowack
+	http://www.kowack.info/projects/vk_api
+Wordfence Security (v.3.8.5) из Mark Maunder
+	http://www.wordfence.com/
+WordPress Importer (v.0.6.1) из wordpressdotorg
+	http://wordpress.org/extend/plugins/wordpress-importer/
+WordPress SEO (v.1.4.18) из Joost de Valk
+	http://yoast.com/wordpress/seo/#utm_source=wpadmin&utm_medium=plugin&utm_campaign=wpseoplugin
+WP-SpamFree (v.2.1.1.1) из WP-SpamFree
+	http://www.polepositionmarketing.com/library/wp-spamfree/
+WP PIE (v.1.2) из ThemeREACTOR
+	http://themereactor.com/plugin/pie/
+wpSEO (v.2.7.5) из Sergej M�ller
+	http://www.wpseo.org
+ВП Типограф Лайт (v.2.3.5) из Сергей М.
+	http://iskariot.ru/wordpress/typo/#typo-light
+
+Активные плагины:
+------------------------------
+Antispam Bee
+BackWPup
+Google XML Sitemaps
+RusToLat
+WordPress SEO
+
+Неактивные плагины:
+------------------------------
+(J)ExR
+Cleverness To-Do List
+Dagon Design Sitemap Generator
+LiveJournal Importer
+Subscribe To Comments
+VKontakte API
+Wordfence Security
+WordPress Importer
+WP-SpamFree
+WP PIE
+wpSEO
+ВП Типограф Лайт
