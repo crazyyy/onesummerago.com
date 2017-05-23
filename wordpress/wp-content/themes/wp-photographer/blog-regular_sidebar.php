@@ -9,7 +9,7 @@
 				<?php
 					get_template_part( 'part', 'archive_title' );
 				?>
-				
+
 				<div class="blog-regular">
 					<?php
 						if ( have_posts() ) :
@@ -20,7 +20,7 @@
 											<h1 class="entry-title">
 												<?php
 													$hide_post_title = get_option( $post->ID . 'hide_post_title', false );
-													
+
 													if ( $hide_post_title )
 													{
 														$hide_post_title_out = 'style="display: none;"';
@@ -32,7 +32,7 @@
 												?>
 												<a <?php echo $hide_post_title_out; ?> href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 											</h1>
-											
+
 											<div class="entry-meta">
 												<span class="vcard author post-author">
 													<span class="fn"><?php the_author(); ?></span>
@@ -46,7 +46,7 @@
 												</span>
 												<span class="comment-link">
 													<?php
-														comments_popup_link(__( '0 Comments', 'read' ),
+														comments_popup_link(__( '0 Комментариев', 'read' ),
 																			__( '1 Comment', 'read' ),
 																			__( '% Comments', 'read' ) );
 													?>
@@ -57,13 +57,13 @@
 													?>
 												</span>
 												<?php
-													edit_post_link( __( 'Edit', 'read' ),
+													edit_post_link( __( 'Редактировать', 'read' ),
 																	'<span class="edit-link">',
 																	'</span>' );
 												?>
 											</div>
 										</header>
-										
+
 										<?php
 											if ( has_post_thumbnail() )
 											{
@@ -78,22 +78,22 @@
 												<?php
 											}
 										?>
-										
+
 										<div class="entry-content">
 											<?php
 												if (has_excerpt())
 												{
 													the_excerpt();
-													
-													echo '<span class="more"><a class="more-link" href="'. get_permalink() . '">' . __('Read More', 'read') . '</a></span>';
+
+													echo '<span class="more"><a class="more-link" href="'. get_permalink() . '">' . __('Подробнее', 'read') . '</a></span>';
 												}
 												else
 												{
 													$theme_excerpt = get_option('theme_excerpt', 'standard');
-													
+
 													if ($theme_excerpt == 'No')
 													{
-														the_content(__('Read More', 'read'));
+														the_content(__('Подробнее', 'read'));
 													}
 													elseif ($theme_excerpt == 'Yes')
 													{
@@ -102,19 +102,19 @@
 													else
 													{
 														$format = get_post_format();
-														
+
 														if ($format == false)
 														{
 															the_excerpt();
 														}
 														else
 														{
-															the_content(__('Read More', 'read'));
+															the_content(__('Подробнее', 'read'));
 														}
 													}
 												}
 											?>
-											
+
 											<?php
 												wp_link_pages(array('before' => '<div class="page-links">' . __( 'Pages:', 'read' ), 'after' => '</div>'));
 											?>
@@ -124,14 +124,14 @@
 							endwhile;
 						endif;
 					?>
-					
+
 					<?php
 						get_template_part('part', 'pagination');
 					?>
 				</div>
 			</div>
 		</div>
-		
+
 		<?php
 			get_sidebar();
 		?>
