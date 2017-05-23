@@ -16,9 +16,12 @@ get_header();
 						?>
 							<div id="post-<?php the_ID(); ?>" <?php post_class( 'home-wrap' ); ?>>
 								<div class="home-background">
+                 <div class="bgi">
                   <div class="intro">
-                    <?php the_content(); ?>
+                  <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut soluta repellat hic deleniti dignissimos provident cupiditate quibusdam adipisci facere perferendis.</h2>
+                    <a href="<?php echo get_page_link( 491 ); ?>" class = "button">Перейти!</a>
                   </div>
+                 </div>
                 </div>
 							</div>
 						<?php

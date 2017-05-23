@@ -1,6 +1,6 @@
 <aside class="about-author">
-	<h3 class="section-title"><?php echo __( 'WRITTEN BY', 'read' ); ?></h3>
-	
+	<h3 class="section-title"><?php echo __( 'Автор', 'read' ); ?></h3>
+
 	<div class="author-bio">
 		<div class="author-img">
 			<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
@@ -9,16 +9,16 @@
 				?>
 			</a>
 		</div>
-		
+
 		<div class="author-info">
 			<h4 class="author-name"><?php the_author(); ?></h4>
-			
+
 			<p>
-				<?php	
+				<?php
 					echo get_the_author_meta( 'description' );
 				?>
 			</p>
-			
+
 			<?php
 				if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'pixelwars_author_social_icons' ) ) :
 				endif;

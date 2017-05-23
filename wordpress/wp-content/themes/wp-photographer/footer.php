@@ -34,8 +34,8 @@
 			</div>
 		</div>
 		<!-- Root element of PhotoSwipe -->
-		
-		
+
+
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="layout-medium">
                 <div class="footer-social">
@@ -44,12 +44,12 @@
 						endif;
 					?>
                 </div>
-				
+
 				<div class="site-info">
 					<p>
 						<?php
-							$copyright_text = stripcslashes( get_option( 'copyright_text', "" ) );
-							
+							$copyright_text = stripcslashes( get_option( 'copyright_text', "Copyright © 2017 Ольга Мирошниченко" ) );
+
 							echo $copyright_text;
 						?>
 					</p>
@@ -57,8 +57,8 @@
 			</div>
 		</footer>
 	</div>
-    
-	
+
+
 	<?php
 		wp_footer();
 	?>

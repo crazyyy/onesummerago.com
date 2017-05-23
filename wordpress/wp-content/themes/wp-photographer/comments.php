@@ -24,29 +24,29 @@
 								'<span class="on" style="display: none;">&#8594;</span> <span style="display: none;">' . get_the_title() . '</span>' );
 					?>
 				</h3>
-				
-				
+
+
 				<ol class="commentlist">
 					<?php
 						wp_list_comments( array('callback' => 'pixelwars_theme_comments',
 												'style'    => 'ol' ) );
 					?>
 				</ol>
-				
-				
+
+
 				<?php
 					// are there comments to navigate through
 					if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
 						?>
 							<nav id="comment-nav-below" class="navigation" role="navigation">
 								<h1 class="assistive-text section-heading"><?php _e( 'Comment navigation', 'read' ); ?></h1>
-								
+
 								<div class="nav-previous">
 									<?php
 										previous_comments_link( __( '&larr; Older Comments', 'read' ) );
 									?>
 								</div>
-								
+
 								<div class="nav-next">
 									<?php
 										next_comments_link( __( 'Newer Comments &rarr;', 'read' ) );
@@ -57,7 +57,7 @@
 					endif;
 					// end Check for comment navigation
 				?>
-				
+
 				<?php
 					if ( ! comments_open() && get_comments_number() ) :
 						?>
@@ -68,11 +68,11 @@
 			<?php
 		endif;
 	?>
-	
-	
+
+
 	<?php
-		$comments_args = array( 'title_reply' => __( 'Leave A Comment', 'read' ) );
-		
+		$comments_args = array( 'title_reply' => __( 'Оставить комментарий', 'read' ) );
+
 		comment_form( $comments_args );
 	?>
 </div>

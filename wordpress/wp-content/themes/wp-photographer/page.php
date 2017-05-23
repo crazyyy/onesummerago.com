@@ -14,7 +14,7 @@
 								<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 									<?php
 										$hide_post_title = get_option( $post->ID . 'hide_post_title', false );
-										
+
 										if ( $hide_post_title )
 										{
 											$hide_post_title = 'style="display: none;"';
@@ -27,23 +27,33 @@
 									<header class="entry-header" <?php echo $hide_post_title; ?>>
 										<h1 class="entry-title"><?php the_title(); ?></h1>
 									</header>
-									
-									
+
+
 									<div class="entry-content">
 										<?php
 											the_content();
 										?>
-										
-										<?php
-											wp_link_pages( array( 'before' => '<div class="page-links clearfix">' . __( 'Pages:', 'read' ), 'after' => '</div>' ) );
-										?>
+
+										<h2 class="section-title">Я в соц.сетях</h2>
+                    <ul class="social">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <h2 class="section-title">Контакты</h2>
+                    <div class="row">
+                      <div class="col-sm-3 col-xs-6"></div>
+                      <div class="col-sm-3 col-xs-6"></div>
+                      <div class="col-sm-3 col-xs-6"></div>
+                      <div class="col-sm-3 col-xs-6"></div>
+                    </div>
 									</div>
 								</article>
-								
-								
-								<?php
-									comments_template( "", true );
-								?>
+
+
+
 							<?php
 						endwhile;
 					endif;

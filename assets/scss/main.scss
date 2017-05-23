@@ -4091,7 +4091,12 @@ A library of transitions for revealing the loaded images
 }
 
 /* HOME */
-
+.bgi{
+  background-image: url(../img/bgi_6.jpg);
+  width:100%;
+  min-height:600px;
+  background-size:cover;
+}
 .home-wrap {
   position: relative;
   .intro {

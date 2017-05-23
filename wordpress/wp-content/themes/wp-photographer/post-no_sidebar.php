@@ -13,7 +13,7 @@
 								<header class="entry-header">
 									<?php
 										$hide_post_title = get_option( $post->ID . 'hide_post_title', false );
-										
+
 										if ( $hide_post_title )
 										{
 											$hide_post_title = 'style="display: none;"';
@@ -24,7 +24,7 @@
 										}
 									?>
 									<h1 class="entry-title" <?php echo $hide_post_title; ?>><?php the_title(); ?></h1>
-									
+
 									<div class="entry-meta">
 										<span class="vcard author post-author">
 											<span class="fn"><?php the_author(); ?></span>
@@ -38,9 +38,12 @@
 										</span>
 										<span class="comment-link">
 											<?php
-												comments_popup_link(__( '0 Comments', 'read' ),
-																	__( '1 Comment', 'read' ),
-																	__( '% Comments', 'read' ) );
+												comments_popup_link(__( '0 Комментариев', 'read' ),
+																	__( '1 Комментарий', 'read' ),
+																	__( '2 Комментария', 'read' ),
+                                  __( '3 Комментария', 'read' ),
+                                  __( '4 Комментария', 'read' ),
+                                  __( '% Комментариев', 'read' ) );
 											?>
 										</span>
 										<span class="cat-links">
@@ -49,13 +52,13 @@
 											?>
 										</span>
 										<?php
-											edit_post_link( __( 'Edit', 'read' ),
+											edit_post_link( __( 'Редактировать', 'read' ),
 															'<span class="edit-link">',
 															'</span>' );
 										?>
 									</div>
 								</header>
-								
+
 								<?php
 									if ( has_post_thumbnail() )
 									{
@@ -68,16 +71,16 @@
 										<?php
 									}
 								?>
-								
+
 								<div class="entry-content">
 									<?php
 										the_content();
 									?>
-									
+
 									<?php
 										wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'read' ), 'after' => '</div>' ) );
 									?>
-									
+
 									<?php
 										if ( get_the_tags() != "" )
 										{
@@ -90,11 +93,11 @@
 											<?php
 										}
 									?>
-									
+
 									<?php
 										get_template_part( 'part', 'share_links' );
 									?>
-									
+
 									<nav class="nav-single row">
 										<div class="nav-previous col-sm-6">
 											<?php
@@ -107,19 +110,19 @@
 											?>
 										</div>
 									</nav>
-									
+
 									<?php
 										$about_the_author_module = get_option( 'about_the_author_module', 'Yes' );
-										
+
 										if ( $about_the_author_module != 'No' )
 										{
 											get_template_part( 'part', 'about_author' );
 										}
 									?>
-									
+
 									<?php
 										$pixelwars__related_posts = get_option( 'pixelwars__related_posts', 'Yes' );
-										
+
 										if ( $pixelwars__related_posts == 'Yes' )
 										{
 											get_template_part( 'part', 'related_posts' );
@@ -127,7 +130,7 @@
 									?>
 								</div>
 							</article>
-							
+
 							<?php
 								comments_template( "", true );
 							?>
