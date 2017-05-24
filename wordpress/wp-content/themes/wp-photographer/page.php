@@ -35,19 +35,42 @@
 										?>
 
 										<h2 class="section-title">Я в соц.сетях</h2>
-                    <ul class="social">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
+
+                      <?php
+            if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'pixelwars_footer_sidebar' ) ) :
+            endif;
+          ?>
+
                     <h2 class="section-title">Контакты</h2>
                     <div class="row">
-                      <div class="col-sm-3 col-xs-6"></div>
-                      <div class="col-sm-3 col-xs-6"></div>
-                      <div class="col-sm-3 col-xs-6"></div>
-                      <div class="col-sm-3 col-xs-6"></div>
+                      <div class="col-sm-3 col-xs-6">
+                      <div class="fun-fact">
+                        <i class="pw-icon-location-outline"></i>
+                        <p></p>
+                        <h4>г.Винница</h4>
+                      </div>
+                      </div>
+                      <div class="col-sm-3 col-xs-6">
+                      <div class="fun-fact">
+                        <i class="pw-icon-phone-outline"></i>
+                        <p></p>
+                        <h4>+380 63 8558308</h4>
+                      </div>
+                      </div>
+                      <div class="col-sm-3 col-xs-6">
+                      <div class="fun-fact">
+                        <i class="pw-icon-mail-1"></i>
+                        <p></p>
+                        <h4><a href="mailto:onesummerago@gmail.com">onesummerago</a></h4>
+                      </div>
+                      </div>
+                      <div class="col-sm-3 col-xs-6">
+                      <div class="fun-fact">
+                        <i class="pw-icon-skype"></i>
+                        <p></p>
+                        <h4><a href="skype:onesummerago?call">onesummerago</a></h4>
+                      </div>
+                      </div>
                     </div>
 									</div>
 								</article>

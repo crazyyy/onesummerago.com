@@ -13,17 +13,17 @@
 								<header class="entry-header">
 									<h1 class="entry-title"><?php the_title(); ?></h1>
 								</header>
-								
+
 								<div class="entry-content">
 									<?php
 										the_content();
 									?>
-									
+
 									<?php
 										wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'read' ), 'after' => '</div>' ) );
 									?>
 								</div>
-								
+
 								<nav class="row nav-single">
 									<div class="col-xs-6 nav-previous">
 										<?php
@@ -42,9 +42,7 @@
 				?>
 			</div>
 			<div class="layout-fixed">
-				<?php
-					comments_template( "", true );
-				?>
+
 			</div>
 		</div>
 	</div>
